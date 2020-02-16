@@ -5,4 +5,6 @@ Khi trạng thái reject được tìm thấy thì .catch sẽ được trigger.
 Promise hỗ trợ 'chaining'
 Promise hỗ trợ bắt lỗi dễ hơn callback
 Xử lý bất đồng bộ tốt hơn
-Giải quyết được vấn nạn callback hell.
+Giải quyết được vấn nạn callback hell
+
+// Vẫn có thể có promise-hell ==> giải quyết sử dụng async-await

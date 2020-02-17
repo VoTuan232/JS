@@ -1,24 +1,23 @@
 "use strict";
-const http = require('http');
-const express = require('express');
-const app = express();
+const alert = require('alert-node');
 const _ = require('lodash');
 
-app.listen(3000);
+const data = [{
+    "id": 52,
+    "carBodyKindId": 11,
+    "carMakerCarKindId": 238,
+    "name": "Ｊ１００トラック　１．５ｔ　２ＷＤ",
+  },
+  {
+    "id": 52,
+    "carBodyKindId": 11,
+    "carMakerCarKindId": 238,
+    "name": "Ｊ１００トラック　１．５ｔ　２ＷＤ",
+  }
+]
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
-});
-
-let initialValue = 0
-let sum = [{
-  x: 1
-}, {
-  x: 2
-}, {
-  x: 3
-}].reduce(function (accumulator, currentValue) {
-  return accumulator + currentValue.x
-}, initialValue)
-
-console.log(sum) // logs 6
+console.log(_.map(data, x => {
+  return _.assign(x, {
+    parent: 1
+  });
+}));

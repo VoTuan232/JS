@@ -1,5 +1,7 @@
 "use strict";
 
+// check dãy tăng nếu xóa đi nhiều nhất 1 số
+
 function almostIncreasingSequence(sequence) {
   let removedOne = false;
   for (let i = 0; i < (sequence.length - 1); i++) {

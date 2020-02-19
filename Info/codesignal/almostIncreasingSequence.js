@@ -2,8 +2,8 @@
 
 function almostIncreasingSequence(sequence) {
   let removedOne = false;
-  for (var i = 0; i < (sequence.length - 1); i++) {
-    if (sequence[i] >= sequence[i + 1])
+  for (let i = 0; i < (sequence.length - 1); i++) {
+    if (sequence[i] >= sequence[i + 1]) {
       if (removedOne)
         return false;
       else {
@@ -15,6 +15,7 @@ function almostIncreasingSequence(sequence) {
             return false;
         }
       }
+    }
   }
   return true;
 }

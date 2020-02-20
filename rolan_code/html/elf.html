@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Editor/Librarian Framework Ver 1.00</title>
+	<link rel="stylesheet" type="text/css" href="elf.css" />
+
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/lib/native.js"></script>
+
+	<script src="js/utilities/constant.js"></script>
+	<script src="js/utilities/converter.js"></script>
+
+	<script src="js/config/address_map.js"></script>
+	<script src="js/config/editor_setting.js"></script>
+	<script src="js/config/librarian_setting.js"></script>
+	<script src="js/config/message.js"></script>
+	<script src="js/config/product_setting.js"></script>
+
+	<script src="js/common/midi_controller.js"></script>
+	<script src="js/common/parameter.js"></script>
+	<script src="js/common/readwrite_logic.js"></script>
+	<script src="js/common/librarian_cell.js"></script>
+	<script src="js/common/librarian.js"></script>
+	<script src="js/common/editor.js"></script>
+
+	<script src="js/businesslogic/system_controller.js"></script>
+	<script src="js/businesslogic/editor_controller.js"></script>
+	<script src="js/businesslogic/librarian_model.js"></script>
+	<script src="js/businesslogic/librarian_controller.js"></script>
+</head>
+<body>
+
+<div id="container">
+
+	<div id="menu">
+		<button class="system">SYSTEM</button>
+		<button class="editor">EDITOR</button>
+		<button class="librarian">LIBRARIAN</button>
+		<button class="pamameter">(Parameter)</button>
+	</div>
+
+	<div id="system_view">
+		<h1>SYSTEM</h1>
+		<div class="info"></div>
+		<div class="midi">
+			<h2>MIDI Devices</h2>
+			<p>Input:</p>
+				<div id="inputs"></div>
+				<p><input class='log_midi_in' type="checkbox" />Monitor</p>
+			<p>Output:</p>
+				<div id="outputs"></div>
+				<p><input class='log_midi_out' type="checkbox" />Monitor</p>
+		</div>
+		<div class="monitor">
+			<button id="clear_log">Clear Log</button>
+			<div id="log"></div>
+		</div>
+	</div>
+
+	<div id="editor_view" style="display:none;">
+		<div id="editor_menu">
+			<h1>EDITOR</h1>
+			<div class="file">
+				<button class="load">Load</button>
+				<button class="save">Save</button> |
+				<button class="read">Read</button>
+				<button class="sync">Sync</button> |
+				<button class="preview" data-state="off">Preview</button>
+				<label class="progress"></label>
+			</div>
+			<div class="mode"></div>
+			<button id="reload" style="float:right;">Reload Layout</button>
+		</div>
+		<div class="export">
+			<iframe src=""></iframe>
+		</div>
+	</div>
+
+	<div id="librarian_view" style="display:none;">
+		<h1>LIBRARIAN</h1>
+		<div class="file">
+			<button class="load">Load</button>
+			<button class="save">Save</button>
+			<button class="new">New</button>
+			<button class="duplicate">Duplicate</button> |
+			<button class="close">Close</button>
+			<label class="progress"></label>
+		</div>
+		<div class="edit">
+			<button class="selectAll">Select All</button>
+			<button class="clear">Clear</button> | 
+			<button class="copy">Copy</button>
+			<button class="paste">Paste</button>
+			<button class="initialize">Initialize</button>
+			<button class="delete">Delete</button>
+		</div>
+		<div class="mode"></div>
+		<div class="tabs"></div>
+		<div class="list"></div>
+	</div>
+
+	<div id="parameter_view" style="display:none;">
+		<h1>PARAMETER</h1>
+		<div class="list"></div>
+	</div>
+
+	<script type = "text/javascript">
+	$(function() {
+		$('button.system').on('click', function(e) {
+			$('#parameter_view .list').empty();
+			$('#system_view, #editor_view, #librarian_view, #parameter_view').hide();
+			$('#system_view').show();
+		});
+		$('button.editor').on('click', function(e) {
+			$('#parameter_view .list').empty();
+			$('#system_view, #editor_view, #librarian_view, #parameter_view').hide();
+			$('#editor_view').show();
+		});
+		$('button.librarian').on('click', function(e) {
+			$('#parameter_view .list').empty();
+			$('#system_view, #editor_view, #librarian_view, #parameter_view').hide();
+			$('#librarian_view').show();
+		});
+		$('button.pamameter').on('click', function(e) {
+			$('#parameter_view .list').empty();
+			$('#system_view, #editor_view, #librarian_view, #parameter_view').hide();
+			var doc = '<table>';
+			for (var bid in Parameter.paramSet) {
+				var data = Parameter.paramSet[bid].join();
+				doc += '<tr><td>' + bid + '</td><td>' + data + '</td></tr>';
+			}
+			doc += '</table>'
+			$('#parameter_view .list').append(doc);
+			$('#parameter_view').show();
+		});
+
+		$('#reload').on('click', function(e) {
+			$('.export iframe').attr('src', 'export.html');
+		});
+
+		$native.app.event.command = function(param1, param2) {
+			if (param1 == 'exit') {
+				$native.app.exit();
+			}
+			if (param1 == 'open') {
+				location.href = param2;
+			}
+		};
+		$event.start();
+
+	});
+	</script>
+
+<div>
+
+</body>
+</html>

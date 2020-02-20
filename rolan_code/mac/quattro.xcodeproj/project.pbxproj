@@ -1,0 +1,1101 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4007A6381A941A36009408EC /* OpenPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4007A6361A941A36009408EC /* OpenPanelController.m */; };
+		4007A6391A941A36009408EC /* OpenPanelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4007A6371A941A36009408EC /* OpenPanelController.xib */; };
+		4007A63D1A941ABB009408EC /* SavePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4007A63B1A941ABB009408EC /* SavePanelController.m */; };
+		4007A63E1A941ABB009408EC /* SavePanelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4007A63C1A941ABB009408EC /* SavePanelController.xib */; };
+		400B39372226D0B800C2D188 /* TGIF.mm in Sources */ = {isa = PBXBuildFile; fileRef = 400B39362226D0B800C2D188 /* TGIF.mm */; };
+		400B39382226D0B800C2D188 /* TGIF.mm in Sources */ = {isa = PBXBuildFile; fileRef = 400B39362226D0B800C2D188 /* TGIF.mm */; };
+		4010A3AC21A681D200E75ADD /* BLEMIDIConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4010A3A521A681D200E75ADD /* BLEMIDIConnectionManager.m */; };
+		4010A3AD21A681D200E75ADD /* BLEMIDIEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4010A3A721A681D200E75ADD /* BLEMIDIEndpoint.m */; };
+		4010A3AE21A681D200E75ADD /* ScanBLEMIDIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4010A3A921A681D200E75ADD /* ScanBLEMIDIController.m */; };
+		4010A3AF21A681D200E75ADD /* ScanBLEMIDIController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4010A3AA21A681D200E75ADD /* ScanBLEMIDIController.xib */; };
+		4010D29A2330754300C14A43 /* HTTPTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4010D2972330754300C14A43 /* HTTPTask.m */; };
+		4010D29B2330754300C14A43 /* HTTPTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4010D2972330754300C14A43 /* HTTPTask.m */; };
+		4010D29C2330754300C14A43 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4010D2982330754300C14A43 /* HTTPConnection.m */; };
+		4010D29D2330754300C14A43 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4010D2982330754300C14A43 /* HTTPConnection.m */; };
+		4010D29F2330757600C14A43 /* NativeCall+tcpip.m in Sources */ = {isa = PBXBuildFile; fileRef = 4010D29E2330757600C14A43 /* NativeCall+tcpip.m */; };
+		4010D2A02330757600C14A43 /* NativeCall+tcpip.m in Sources */ = {isa = PBXBuildFile; fileRef = 4010D29E2330757600C14A43 /* NativeCall+tcpip.m */; };
+		401C09501A88D5FA00B1E2E6 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 401C094F1A88D5FA00B1E2E6 /* html */; };
+		401C09511A88D5FA00B1E2E6 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 401C094F1A88D5FA00B1E2E6 /* html */; };
+		402BB28B1BDA065B00322544 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 402BB28A1BDA065B00322544 /* libz.tbd */; };
+		402BB2A81BDA09BC00322544 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 402BB29E1BDA09BC00322544 /* ioapi.c */; };
+		402BB2A91BDA09BC00322544 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 402BB2A01BDA09BC00322544 /* mztools.c */; };
+		402BB2AA1BDA09BC00322544 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 402BB2A21BDA09BC00322544 /* unzip.c */; };
+		402BB2AB1BDA09BC00322544 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 402BB2A41BDA09BC00322544 /* zip.c */; };
+		402BB2AC1BDA09BC00322544 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 402BB2A71BDA09BC00322544 /* ZipArchive.mm */; };
+		40335474206CC3B70012189D /* JavaScriptInterface+xhr.m in Sources */ = {isa = PBXBuildFile; fileRef = 40335473206CC3B60012189D /* JavaScriptInterface+xhr.m */; };
+		40335475206CC3B90012189D /* JavaScriptInterface+xhr.m in Sources */ = {isa = PBXBuildFile; fileRef = 40335473206CC3B60012189D /* JavaScriptInterface+xhr.m */; };
+		4037AD161AEDE5820016F4F0 /* AudioInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACE31AEDE5820016F4F0 /* AudioInput.m */; };
+		4037AD171AEDE5820016F4F0 /* AudioInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACE31AEDE5820016F4F0 /* AudioInput.m */; };
+		4037AD181AEDE5820016F4F0 /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACE61AEDE5820016F4F0 /* AudioOutput.m */; };
+		4037AD191AEDE5820016F4F0 /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACE61AEDE5820016F4F0 /* AudioOutput.m */; };
+		4037AD1A1AEDE5820016F4F0 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACE91AEDE5820016F4F0 /* AudioPlayer.m */; };
+		4037AD1B1AEDE5820016F4F0 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACE91AEDE5820016F4F0 /* AudioPlayer.m */; };
+		4037AD1C1AEDE5820016F4F0 /* AudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACEB1AEDE5820016F4F0 /* AudioRecorder.m */; };
+		4037AD1D1AEDE5820016F4F0 /* AudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACEB1AEDE5820016F4F0 /* AudioRecorder.m */; };
+		4037AD221AEDE5820016F4F0 /* JavaScriptInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF31AEDE5820016F4F0 /* JavaScriptInterface.m */; };
+		4037AD231AEDE5820016F4F0 /* JavaScriptInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF31AEDE5820016F4F0 /* JavaScriptInterface.m */; };
+		4037AD241AEDE5820016F4F0 /* NativeCall+app.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF41AEDE5820016F4F0 /* NativeCall+app.m */; };
+		4037AD251AEDE5820016F4F0 /* NativeCall+app.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF41AEDE5820016F4F0 /* NativeCall+app.m */; };
+		4037AD261AEDE5820016F4F0 /* NativeCall+fs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF51AEDE5820016F4F0 /* NativeCall+fs.m */; };
+		4037AD271AEDE5820016F4F0 /* NativeCall+fs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF51AEDE5820016F4F0 /* NativeCall+fs.m */; };
+		4037AD281AEDE5820016F4F0 /* NativeCall+http.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF61AEDE5820016F4F0 /* NativeCall+http.m */; };
+		4037AD291AEDE5820016F4F0 /* NativeCall+http.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF61AEDE5820016F4F0 /* NativeCall+http.m */; };
+		4037AD2A1AEDE5820016F4F0 /* NativeCall+midi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF71AEDE5820016F4F0 /* NativeCall+midi.m */; };
+		4037AD2B1AEDE5820016F4F0 /* NativeCall+midi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF71AEDE5820016F4F0 /* NativeCall+midi.m */; };
+		4037AD2C1AEDE5820016F4F0 /* NativeCall+player.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF81AEDE5820016F4F0 /* NativeCall+player.m */; };
+		4037AD2D1AEDE5820016F4F0 /* NativeCall+player.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF81AEDE5820016F4F0 /* NativeCall+player.m */; };
+		4037AD2E1AEDE5820016F4F0 /* NativeCall+recorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF91AEDE5820016F4F0 /* NativeCall+recorder.m */; };
+		4037AD2F1AEDE5820016F4F0 /* NativeCall+recorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACF91AEDE5820016F4F0 /* NativeCall+recorder.m */; };
+		4037AD301AEDE5820016F4F0 /* NativeCall+rwc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACFA1AEDE5820016F4F0 /* NativeCall+rwc.m */; };
+		4037AD311AEDE5820016F4F0 /* NativeCall+rwc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACFA1AEDE5820016F4F0 /* NativeCall+rwc.m */; };
+		4037AD321AEDE5820016F4F0 /* NativeCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACFC1AEDE5820016F4F0 /* NativeCall.m */; };
+		4037AD331AEDE5820016F4F0 /* NativeCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACFC1AEDE5820016F4F0 /* NativeCall.m */; };
+		4037AD341AEDE5820016F4F0 /* NativeProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACFE1AEDE5820016F4F0 /* NativeProtocol.m */; };
+		4037AD351AEDE5820016F4F0 /* NativeProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037ACFE1AEDE5820016F4F0 /* NativeProtocol.m */; };
+		4037AD361AEDE5820016F4F0 /* MIDIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD011AEDE5820016F4F0 /* MIDIClient.m */; };
+		4037AD371AEDE5820016F4F0 /* MIDIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD011AEDE5820016F4F0 /* MIDIClient.m */; };
+		4037AD381AEDE5820016F4F0 /* MIDIInputPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD031AEDE5820016F4F0 /* MIDIInputPort.m */; };
+		4037AD391AEDE5820016F4F0 /* MIDIInputPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD031AEDE5820016F4F0 /* MIDIInputPort.m */; };
+		4037AD3A1AEDE5820016F4F0 /* MIDIOutputPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD051AEDE5820016F4F0 /* MIDIOutputPort.m */; };
+		4037AD3B1AEDE5820016F4F0 /* MIDIOutputPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD051AEDE5820016F4F0 /* MIDIOutputPort.m */; };
+		4037AD3C1AEDE5820016F4F0 /* RWCAudioInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD081AEDE5820016F4F0 /* RWCAudioInputStream.m */; };
+		4037AD3D1AEDE5820016F4F0 /* RWCAudioInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD081AEDE5820016F4F0 /* RWCAudioInputStream.m */; };
+		4037AD3E1AEDE5820016F4F0 /* RWCAudioOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD0A1AEDE5820016F4F0 /* RWCAudioOutputStream.m */; };
+		4037AD3F1AEDE5820016F4F0 /* RWCAudioOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD0A1AEDE5820016F4F0 /* RWCAudioOutputStream.m */; };
+		4037AD401AEDE5820016F4F0 /* RWCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD0C1AEDE5820016F4F0 /* RWCConnection.m */; };
+		4037AD411AEDE5820016F4F0 /* RWCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD0C1AEDE5820016F4F0 /* RWCConnection.m */; };
+		4037AD421AEDE5820016F4F0 /* RWCDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD0E1AEDE5820016F4F0 /* RWCDiscovery.m */; };
+		4037AD431AEDE5820016F4F0 /* RWCDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD0E1AEDE5820016F4F0 /* RWCDiscovery.m */; };
+		4037AD441AEDE5820016F4F0 /* RWCMIDIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD101AEDE5820016F4F0 /* RWCMIDIService.m */; };
+		4037AD451AEDE5820016F4F0 /* RWCMIDIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD101AEDE5820016F4F0 /* RWCMIDIService.m */; };
+		4037AD461AEDE5820016F4F0 /* RWCNetClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD121AEDE5820016F4F0 /* RWCNetClient.m */; };
+		4037AD471AEDE5820016F4F0 /* RWCNetClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD121AEDE5820016F4F0 /* RWCNetClient.m */; };
+		4037AD481AEDE5820016F4F0 /* RWCNetServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD141AEDE5820016F4F0 /* RWCNetServer.m */; };
+		4037AD491AEDE5820016F4F0 /* RWCNetServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037AD141AEDE5820016F4F0 /* RWCNetServer.m */; };
+		40481B561DF5300200D8ABF0 /* NativeCall+recognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40481B551DF5300200D8ABF0 /* NativeCall+recognizer.m */; };
+		40481B591DF5302F00D8ABF0 /* SpeechRecognization.m in Sources */ = {isa = PBXBuildFile; fileRef = 40481B581DF5302F00D8ABF0 /* SpeechRecognization.m */; };
+		405792F22048210100865EDE /* NativeCall+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 405792F12048210100865EDE /* NativeCall+notification.m */; };
+		405792F32048265B00865EDE /* NativeCall+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 405792F12048210100865EDE /* NativeCall+notification.m */; };
+		407EB4ED1BA7D87700B4044A /* App.icns in Resources */ = {isa = PBXBuildFile; fileRef = 407EB4EB1BA7D87700B4044A /* App.icns */; };
+		407EB4EE1BA7D87700B4044A /* Doc.icns in Resources */ = {isa = PBXBuildFile; fileRef = 407EB4EC1BA7D87700B4044A /* Doc.icns */; };
+		4084F4282050111E0079C23C /* NativeCall+security.m in Sources */ = {isa = PBXBuildFile; fileRef = 4084F4272050111E0079C23C /* NativeCall+security.m */; };
+		4084F429205011280079C23C /* NativeCall+security.m in Sources */ = {isa = PBXBuildFile; fileRef = 4084F4272050111E0079C23C /* NativeCall+security.m */; };
+		409067481A867AAF007DA8DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 409067471A867AAF007DA8DC /* main.m */; };
+		4090674B1A867AAF007DA8DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4090674A1A867AAF007DA8DC /* AppDelegate.m */; };
+		409067531A867AAF007DA8DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409067521A867AAF007DA8DC /* Images.xcassets */; };
+		409067561A867AAF007DA8DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409067541A867AAF007DA8DC /* LaunchScreen.xib */; };
+		409067731A867B4B007DA8DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 409067721A867B4B007DA8DC /* AppDelegate.m */; };
+		409067751A867B4B007DA8DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 409067741A867B4B007DA8DC /* main.m */; };
+		409067771A867B4B007DA8DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409067761A867B4B007DA8DC /* Images.xcassets */; };
+		4090677A1A867B4B007DA8DC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409067781A867B4B007DA8DC /* MainMenu.xib */; };
+		409067F61A8682DC007DA8DC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409067F51A8682DC007DA8DC /* WebViewController.m */; };
+		409067F91A8682ED007DA8DC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409067F81A8682ED007DA8DC /* WebViewController.m */; };
+		409FD7AF2224505C00F2AF10 /* NativeCall+tgif.m in Sources */ = {isa = PBXBuildFile; fileRef = 409FD7AE2224505B00F2AF10 /* NativeCall+tgif.m */; };
+		40ADB77A2271D8AE00CB9FE1 /* NativeCall+sh.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ADB7792271D8AE00CB9FE1 /* NativeCall+sh.m */; };
+		40ADB77B2271D8AE00CB9FE1 /* NativeCall+sh.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ADB7792271D8AE00CB9FE1 /* NativeCall+sh.m */; };
+		40C0E0A1232A2BE20030B7BF /* NetServiceDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C0E09D232A2BE20030B7BF /* NetServiceDiscovery.m */; };
+		40C0E0A2232A2BE20030B7BF /* NetServiceDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C0E09D232A2BE20030B7BF /* NetServiceDiscovery.m */; };
+		40C0E0A3232A2BE20030B7BF /* TCPIPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C0E09E232A2BE20030B7BF /* TCPIPClient.m */; };
+		40C0E0A4232A2BE20030B7BF /* TCPIPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C0E09E232A2BE20030B7BF /* TCPIPClient.m */; };
+		40CAC61120542B0900C9D54C /* NativeCall+util.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CAC61020542B0900C9D54C /* NativeCall+util.m */; };
+		40CAC61220543D0F00C9D54C /* NativeCall+util.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CAC61020542B0900C9D54C /* NativeCall+util.m */; };
+		40CE1A6E1DFE36C30054728E /* NativeCall+recognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40481B551DF5300200D8ABF0 /* NativeCall+recognizer.m */; };
+		40D3C56D20C78D030044896D /* NativeCall+barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D3C56C20C78D020044896D /* NativeCall+barcode.m */; };
+		40D3C57120C798850044896D /* BarcodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D3C56F20C798840044896D /* BarcodeViewController.m */; };
+		40EA808A1C8ACBE0008AD896 /* WebViewWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EA80881C8ACBE0008AD896 /* WebViewWindowController.m */; };
+		40EA808B1C8ACBE0008AD896 /* WebViewWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EA80891C8ACBE0008AD896 /* WebViewWindowController.xib */; };
+		40EB7FF52229C24E001DC12F /* timestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EB7FF42229C24E001DC12F /* timestamp.m */; };
+		40EB7FF62229C24E001DC12F /* timestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EB7FF42229C24E001DC12F /* timestamp.m */; };
+		40EEF7201DF81240003C73B4 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EEF71F1DF81240003C73B4 /* Speech.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		40F15C6C2327789A00C9449A /* NativeCall+netservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F15C6B2327789A00C9449A /* NativeCall+netservice.m */; };
+		40F15C6D2327789A00C9449A /* NativeCall+netservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F15C6B2327789A00C9449A /* NativeCall+netservice.m */; };
+		40F430502178DBDF0051ADD5 /* NativeCall+midix.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F4304F2178DBDF0051ADD5 /* NativeCall+midix.m */; };
+		40F430512178DD9B0051ADD5 /* NativeCall+midix.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F4304F2178DBDF0051ADD5 /* NativeCall+midix.m */; };
+		40FFB9452226E1B900A06941 /* NativeCall+tgif.m in Sources */ = {isa = PBXBuildFile; fileRef = 409FD7AE2224505B00F2AF10 /* NativeCall+tgif.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4007A6351A941A36009408EC /* OpenPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenPanelController.h; sourceTree = "<group>"; };
+		4007A6361A941A36009408EC /* OpenPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenPanelController.m; sourceTree = "<group>"; };
+		4007A6371A941A36009408EC /* OpenPanelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenPanelController.xib; sourceTree = "<group>"; };
+		4007A63A1A941ABB009408EC /* SavePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavePanelController.h; sourceTree = "<group>"; };
+		4007A63B1A941ABB009408EC /* SavePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavePanelController.m; sourceTree = "<group>"; };
+		4007A63C1A941ABB009408EC /* SavePanelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavePanelController.xib; sourceTree = "<group>"; };
+		400B39352226D0B800C2D188 /* TGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGIF.h; sourceTree = "<group>"; };
+		400B39362226D0B800C2D188 /* TGIF.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TGIF.mm; sourceTree = "<group>"; };
+		4010A3A521A681D200E75ADD /* BLEMIDIConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEMIDIConnectionManager.m; sourceTree = "<group>"; };
+		4010A3A621A681D200E75ADD /* ScanBLEMIDIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanBLEMIDIController.h; sourceTree = "<group>"; };
+		4010A3A721A681D200E75ADD /* BLEMIDIEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEMIDIEndpoint.m; sourceTree = "<group>"; };
+		4010A3A821A681D200E75ADD /* BLEMIDIConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEMIDIConnectionManager.h; sourceTree = "<group>"; };
+		4010A3A921A681D200E75ADD /* ScanBLEMIDIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanBLEMIDIController.m; sourceTree = "<group>"; };
+		4010A3AA21A681D200E75ADD /* ScanBLEMIDIController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanBLEMIDIController.xib; sourceTree = "<group>"; };
+		4010A3AB21A681D200E75ADD /* BLEMIDIEndpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEMIDIEndpoint.h; sourceTree = "<group>"; };
+		4010D2962330754300C14A43 /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConnection.h; sourceTree = "<group>"; };
+		4010D2972330754300C14A43 /* HTTPTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPTask.m; sourceTree = "<group>"; };
+		4010D2982330754300C14A43 /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPConnection.m; sourceTree = "<group>"; };
+		4010D2992330754300C14A43 /* HTTPTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPTask.h; sourceTree = "<group>"; };
+		4010D29E2330757600C14A43 /* NativeCall+tcpip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+tcpip.m"; sourceTree = "<group>"; };
+		401C094F1A88D5FA00B1E2E6 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; name = html; path = ../html; sourceTree = "<group>"; };
+		402BB28A1BDA065B00322544 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		402BB29D1BDA09BC00322544 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		402BB29E1BDA09BC00322544 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		402BB29F1BDA09BC00322544 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		402BB2A01BDA09BC00322544 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		402BB2A11BDA09BC00322544 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		402BB2A21BDA09BC00322544 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		402BB2A31BDA09BC00322544 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		402BB2A41BDA09BC00322544 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		402BB2A51BDA09BC00322544 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		402BB2A61BDA09BC00322544 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		402BB2A71BDA09BC00322544 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		402FBB522238C32300A39500 /* security.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = security.h; sourceTree = "<group>"; };
+		40335473206CC3B60012189D /* JavaScriptInterface+xhr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JavaScriptInterface+xhr.m"; sourceTree = "<group>"; };
+		4037ACE21AEDE5820016F4F0 /* AudioInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioInput.h; sourceTree = "<group>"; };
+		4037ACE31AEDE5820016F4F0 /* AudioInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioInput.m; sourceTree = "<group>"; };
+		4037ACE41AEDE5820016F4F0 /* AudioInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioInputStream.h; sourceTree = "<group>"; };
+		4037ACE51AEDE5820016F4F0 /* AudioOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutput.h; sourceTree = "<group>"; };
+		4037ACE61AEDE5820016F4F0 /* AudioOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioOutput.m; sourceTree = "<group>"; };
+		4037ACE71AEDE5820016F4F0 /* AudioOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutputStream.h; sourceTree = "<group>"; };
+		4037ACE81AEDE5820016F4F0 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		4037ACE91AEDE5820016F4F0 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		4037ACEA1AEDE5820016F4F0 /* AudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecorder.h; sourceTree = "<group>"; };
+		4037ACEB1AEDE5820016F4F0 /* AudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecorder.m; sourceTree = "<group>"; };
+		4037ACF21AEDE5820016F4F0 /* JavaScriptInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptInterface.h; sourceTree = "<group>"; };
+		4037ACF31AEDE5820016F4F0 /* JavaScriptInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptInterface.m; sourceTree = "<group>"; };
+		4037ACF41AEDE5820016F4F0 /* NativeCall+app.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+app.m"; sourceTree = "<group>"; };
+		4037ACF51AEDE5820016F4F0 /* NativeCall+fs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+fs.m"; sourceTree = "<group>"; };
+		4037ACF61AEDE5820016F4F0 /* NativeCall+http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+http.m"; sourceTree = "<group>"; };
+		4037ACF71AEDE5820016F4F0 /* NativeCall+midi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+midi.m"; sourceTree = "<group>"; };
+		4037ACF81AEDE5820016F4F0 /* NativeCall+player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+player.m"; sourceTree = "<group>"; };
+		4037ACF91AEDE5820016F4F0 /* NativeCall+recorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+recorder.m"; sourceTree = "<group>"; };
+		4037ACFA1AEDE5820016F4F0 /* NativeCall+rwc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+rwc.m"; sourceTree = "<group>"; };
+		4037ACFB1AEDE5820016F4F0 /* NativeCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeCall.h; sourceTree = "<group>"; };
+		4037ACFC1AEDE5820016F4F0 /* NativeCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeCall.m; sourceTree = "<group>"; };
+		4037ACFD1AEDE5820016F4F0 /* NativeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeProtocol.h; sourceTree = "<group>"; };
+		4037ACFE1AEDE5820016F4F0 /* NativeProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeProtocol.m; sourceTree = "<group>"; };
+		4037AD001AEDE5820016F4F0 /* MIDIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIClient.h; sourceTree = "<group>"; };
+		4037AD011AEDE5820016F4F0 /* MIDIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIClient.m; sourceTree = "<group>"; };
+		4037AD021AEDE5820016F4F0 /* MIDIInputPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIInputPort.h; sourceTree = "<group>"; };
+		4037AD031AEDE5820016F4F0 /* MIDIInputPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIInputPort.m; sourceTree = "<group>"; };
+		4037AD041AEDE5820016F4F0 /* MIDIOutputPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIOutputPort.h; sourceTree = "<group>"; };
+		4037AD051AEDE5820016F4F0 /* MIDIOutputPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIOutputPort.m; sourceTree = "<group>"; };
+		4037AD071AEDE5820016F4F0 /* RWCAudioInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCAudioInputStream.h; sourceTree = "<group>"; };
+		4037AD081AEDE5820016F4F0 /* RWCAudioInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCAudioInputStream.m; sourceTree = "<group>"; };
+		4037AD091AEDE5820016F4F0 /* RWCAudioOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCAudioOutputStream.h; sourceTree = "<group>"; };
+		4037AD0A1AEDE5820016F4F0 /* RWCAudioOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCAudioOutputStream.m; sourceTree = "<group>"; };
+		4037AD0B1AEDE5820016F4F0 /* RWCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCConnection.h; sourceTree = "<group>"; };
+		4037AD0C1AEDE5820016F4F0 /* RWCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCConnection.m; sourceTree = "<group>"; };
+		4037AD0D1AEDE5820016F4F0 /* RWCDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCDiscovery.h; sourceTree = "<group>"; };
+		4037AD0E1AEDE5820016F4F0 /* RWCDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCDiscovery.m; sourceTree = "<group>"; };
+		4037AD0F1AEDE5820016F4F0 /* RWCMIDIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCMIDIService.h; sourceTree = "<group>"; };
+		4037AD101AEDE5820016F4F0 /* RWCMIDIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCMIDIService.m; sourceTree = "<group>"; };
+		4037AD111AEDE5820016F4F0 /* RWCNetClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCNetClient.h; sourceTree = "<group>"; };
+		4037AD121AEDE5820016F4F0 /* RWCNetClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCNetClient.m; sourceTree = "<group>"; };
+		4037AD131AEDE5820016F4F0 /* RWCNetServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCNetServer.h; sourceTree = "<group>"; };
+		4037AD141AEDE5820016F4F0 /* RWCNetServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCNetServer.m; sourceTree = "<group>"; };
+		4037AD151AEDE5820016F4F0 /* RWCProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCProtocol.h; sourceTree = "<group>"; };
+		40481B551DF5300200D8ABF0 /* NativeCall+recognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+recognizer.m"; sourceTree = "<group>"; };
+		40481B571DF5302F00D8ABF0 /* SpeechRecognization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechRecognization.h; sourceTree = "<group>"; };
+		40481B581DF5302F00D8ABF0 /* SpeechRecognization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechRecognization.m; sourceTree = "<group>"; };
+		405792F12048210100865EDE /* NativeCall+notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+notification.m"; sourceTree = "<group>"; };
+		407EB4EB1BA7D87700B4044A /* App.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = App.icns; sourceTree = "<group>"; };
+		407EB4EC1BA7D87700B4044A /* Doc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Doc.icns; sourceTree = "<group>"; };
+		4084F4272050111E0079C23C /* NativeCall+security.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+security.m"; sourceTree = "<group>"; };
+		409067431A867AAF007DA8DC /* quattro(iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quattro(iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		409067461A867AAF007DA8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409067471A867AAF007DA8DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		409067491A867AAF007DA8DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4090674A1A867AAF007DA8DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		409067521A867AAF007DA8DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		409067551A867AAF007DA8DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4090676D1A867B4A007DA8DC /* BOSS TONE STUDIO for SY-1000.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BOSS TONE STUDIO for SY-1000.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		409067701A867B4B007DA8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409067711A867B4B007DA8DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		409067721A867B4B007DA8DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		409067741A867B4B007DA8DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		409067761A867B4B007DA8DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		409067791A867B4B007DA8DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		409067F41A8682DC007DA8DC /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		409067F51A8682DC007DA8DC /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		409067F71A8682ED007DA8DC /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		409067F81A8682ED007DA8DC /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		409FD7AE2224505B00F2AF10 /* NativeCall+tgif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+tgif.m"; sourceTree = "<group>"; };
+		40ADB7792271D8AE00CB9FE1 /* NativeCall+sh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+sh.m"; sourceTree = "<group>"; };
+		40C0E09D232A2BE20030B7BF /* NetServiceDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetServiceDiscovery.m; sourceTree = "<group>"; };
+		40C0E09E232A2BE20030B7BF /* TCPIPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPIPClient.m; sourceTree = "<group>"; };
+		40C0E09F232A2BE20030B7BF /* TCPIPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPIPClient.h; sourceTree = "<group>"; };
+		40C0E0A0232A2BE20030B7BF /* NetServiceDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetServiceDiscovery.h; sourceTree = "<group>"; };
+		40CAC61020542B0900C9D54C /* NativeCall+util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+util.m"; sourceTree = "<group>"; };
+		40D3C56C20C78D020044896D /* NativeCall+barcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+barcode.m"; sourceTree = "<group>"; };
+		40D3C56F20C798840044896D /* BarcodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeViewController.m; sourceTree = "<group>"; };
+		40D3C57020C798850044896D /* BarcodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeViewController.h; sourceTree = "<group>"; };
+		40EA80871C8ACBE0008AD896 /* WebViewWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewWindowController.h; sourceTree = "<group>"; };
+		40EA80881C8ACBE0008AD896 /* WebViewWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewWindowController.m; sourceTree = "<group>"; };
+		40EA80891C8ACBE0008AD896 /* WebViewWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewWindowController.xib; sourceTree = "<group>"; };
+		40EB7FF32229C24E001DC12F /* timestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timestamp.h; sourceTree = "<group>"; };
+		40EB7FF42229C24E001DC12F /* timestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = timestamp.m; sourceTree = "<group>"; };
+		40EEF71F1DF81240003C73B4 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/System/Library/Frameworks/Speech.framework; sourceTree = DEVELOPER_DIR; };
+		40F15C6B2327789A00C9449A /* NativeCall+netservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+netservice.m"; sourceTree = "<group>"; };
+		40F4304F2178DBDF0051ADD5 /* NativeCall+midix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NativeCall+midix.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		409067401A867AAF007DA8DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EEF7201DF81240003C73B4 /* Speech.framework in Frameworks */,
+				402BB28B1BDA065B00322544 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4090676A1A867B4A007DA8DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		400B39342226D0B800C2D188 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				400B39352226D0B800C2D188 /* TGIF.h */,
+				400B39362226D0B800C2D188 /* TGIF.mm */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		4010A3A421A681D200E75ADD /* VenderBLEMIDI */ = {
+			isa = PBXGroup;
+			children = (
+				4010A3A821A681D200E75ADD /* BLEMIDIConnectionManager.h */,
+				4010A3A521A681D200E75ADD /* BLEMIDIConnectionManager.m */,
+				4010A3AB21A681D200E75ADD /* BLEMIDIEndpoint.h */,
+				4010A3A721A681D200E75ADD /* BLEMIDIEndpoint.m */,
+				4010A3A621A681D200E75ADD /* ScanBLEMIDIController.h */,
+				4010A3A921A681D200E75ADD /* ScanBLEMIDIController.m */,
+				4010A3AA21A681D200E75ADD /* ScanBLEMIDIController.xib */,
+			);
+			path = VenderBLEMIDI;
+			sourceTree = "<group>";
+		};
+		402BB29B1BDA09BC00322544 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				402BB29C1BDA09BC00322544 /* minizip */,
+				402BB2A61BDA09BC00322544 /* ZipArchive.h */,
+				402BB2A71BDA09BC00322544 /* ZipArchive.mm */,
+				402BB28A1BDA065B00322544 /* libz.tbd */,
+			);
+			name = ZipArchive;
+			path = ../../contributed/ZipArchive;
+			sourceTree = "<group>";
+		};
+		402BB29C1BDA09BC00322544 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				402BB29D1BDA09BC00322544 /* crypt.h */,
+				402BB29E1BDA09BC00322544 /* ioapi.c */,
+				402BB29F1BDA09BC00322544 /* ioapi.h */,
+				402BB2A01BDA09BC00322544 /* mztools.c */,
+				402BB2A11BDA09BC00322544 /* mztools.h */,
+				402BB2A21BDA09BC00322544 /* unzip.c */,
+				402BB2A31BDA09BC00322544 /* unzip.h */,
+				402BB2A41BDA09BC00322544 /* zip.c */,
+				402BB2A51BDA09BC00322544 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		4037ACE01AEDE5820016F4F0 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4037ACE11AEDE5820016F4F0 /* Audio */,
+				4037ACF11AEDE5820016F4F0 /* JavaScriptInterface */,
+				4037ACFF1AEDE5820016F4F0 /* MIDIClient */,
+				400B39342226D0B800C2D188 /* Sound */,
+				4037AD061AEDE5820016F4F0 /* RolandWirelessConnect */,
+				40C0E09C232A2BE20030B7BF /* Network */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		4037ACE11AEDE5820016F4F0 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				4037ACE21AEDE5820016F4F0 /* AudioInput.h */,
+				4037ACE31AEDE5820016F4F0 /* AudioInput.m */,
+				4037ACE41AEDE5820016F4F0 /* AudioInputStream.h */,
+				4037ACE51AEDE5820016F4F0 /* AudioOutput.h */,
+				4037ACE61AEDE5820016F4F0 /* AudioOutput.m */,
+				4037ACE71AEDE5820016F4F0 /* AudioOutputStream.h */,
+				4037ACE81AEDE5820016F4F0 /* AudioPlayer.h */,
+				4037ACE91AEDE5820016F4F0 /* AudioPlayer.m */,
+				4037ACEA1AEDE5820016F4F0 /* AudioRecorder.h */,
+				4037ACEB1AEDE5820016F4F0 /* AudioRecorder.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		4037ACF11AEDE5820016F4F0 /* JavaScriptInterface */ = {
+			isa = PBXGroup;
+			children = (
+				4037ACF21AEDE5820016F4F0 /* JavaScriptInterface.h */,
+				4037ACF31AEDE5820016F4F0 /* JavaScriptInterface.m */,
+				40335473206CC3B60012189D /* JavaScriptInterface+xhr.m */,
+				4037ACF41AEDE5820016F4F0 /* NativeCall+app.m */,
+				4037ACF51AEDE5820016F4F0 /* NativeCall+fs.m */,
+				4037ACF61AEDE5820016F4F0 /* NativeCall+http.m */,
+				4037ACF71AEDE5820016F4F0 /* NativeCall+midi.m */,
+				40F4304F2178DBDF0051ADD5 /* NativeCall+midix.m */,
+				4037ACF81AEDE5820016F4F0 /* NativeCall+player.m */,
+				4037ACF91AEDE5820016F4F0 /* NativeCall+recorder.m */,
+				4084F4272050111E0079C23C /* NativeCall+security.m */,
+				4010D29E2330757600C14A43 /* NativeCall+tcpip.m */,
+				40F15C6B2327789A00C9449A /* NativeCall+netservice.m */,
+				405792F12048210100865EDE /* NativeCall+notification.m */,
+				40481B551DF5300200D8ABF0 /* NativeCall+recognizer.m */,
+				40D3C56C20C78D020044896D /* NativeCall+barcode.m */,
+				4037ACFA1AEDE5820016F4F0 /* NativeCall+rwc.m */,
+				40ADB7792271D8AE00CB9FE1 /* NativeCall+sh.m */,
+				40CAC61020542B0900C9D54C /* NativeCall+util.m */,
+				409FD7AE2224505B00F2AF10 /* NativeCall+tgif.m */,
+				4037ACFB1AEDE5820016F4F0 /* NativeCall.h */,
+				4037ACFC1AEDE5820016F4F0 /* NativeCall.m */,
+				4037ACFD1AEDE5820016F4F0 /* NativeProtocol.h */,
+				4037ACFE1AEDE5820016F4F0 /* NativeProtocol.m */,
+			);
+			path = JavaScriptInterface;
+			sourceTree = "<group>";
+		};
+		4037ACFF1AEDE5820016F4F0 /* MIDIClient */ = {
+			isa = PBXGroup;
+			children = (
+				4037AD001AEDE5820016F4F0 /* MIDIClient.h */,
+				4037AD011AEDE5820016F4F0 /* MIDIClient.m */,
+				4037AD021AEDE5820016F4F0 /* MIDIInputPort.h */,
+				4037AD031AEDE5820016F4F0 /* MIDIInputPort.m */,
+				4037AD041AEDE5820016F4F0 /* MIDIOutputPort.h */,
+				4037AD051AEDE5820016F4F0 /* MIDIOutputPort.m */,
+				40EB7FF32229C24E001DC12F /* timestamp.h */,
+				40EB7FF42229C24E001DC12F /* timestamp.m */,
+			);
+			path = MIDIClient;
+			sourceTree = "<group>";
+		};
+		4037AD061AEDE5820016F4F0 /* RolandWirelessConnect */ = {
+			isa = PBXGroup;
+			children = (
+				4037AD071AEDE5820016F4F0 /* RWCAudioInputStream.h */,
+				4037AD081AEDE5820016F4F0 /* RWCAudioInputStream.m */,
+				4037AD091AEDE5820016F4F0 /* RWCAudioOutputStream.h */,
+				4037AD0A1AEDE5820016F4F0 /* RWCAudioOutputStream.m */,
+				4037AD0B1AEDE5820016F4F0 /* RWCConnection.h */,
+				4037AD0C1AEDE5820016F4F0 /* RWCConnection.m */,
+				4037AD0D1AEDE5820016F4F0 /* RWCDiscovery.h */,
+				4037AD0E1AEDE5820016F4F0 /* RWCDiscovery.m */,
+				4037AD0F1AEDE5820016F4F0 /* RWCMIDIService.h */,
+				4037AD101AEDE5820016F4F0 /* RWCMIDIService.m */,
+				4037AD111AEDE5820016F4F0 /* RWCNetClient.h */,
+				4037AD121AEDE5820016F4F0 /* RWCNetClient.m */,
+				4037AD131AEDE5820016F4F0 /* RWCNetServer.h */,
+				4037AD141AEDE5820016F4F0 /* RWCNetServer.m */,
+				4037AD151AEDE5820016F4F0 /* RWCProtocol.h */,
+			);
+			path = RolandWirelessConnect;
+			sourceTree = "<group>";
+		};
+		409067131A867939007DA8DC = {
+			isa = PBXGroup;
+			children = (
+				401C094F1A88D5FA00B1E2E6 /* html */,
+				402FBB522238C32300A39500 /* security.h */,
+				409067441A867AAF007DA8DC /* quattro(iOS) */,
+				4090676E1A867B4B007DA8DC /* quattro(Mac) */,
+				4037ACE01AEDE5820016F4F0 /* Libraries */,
+				4090671D1A867939007DA8DC /* Products */,
+				40EEF71E1DF81240003C73B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4090671D1A867939007DA8DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				409067431A867AAF007DA8DC /* quattro(iOS).app */,
+				4090676D1A867B4A007DA8DC /* BOSS TONE STUDIO for SY-1000.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		409067441A867AAF007DA8DC /* quattro(iOS) */ = {
+			isa = PBXGroup;
+			children = (
+				409067491A867AAF007DA8DC /* AppDelegate.h */,
+				4090674A1A867AAF007DA8DC /* AppDelegate.m */,
+				409067F41A8682DC007DA8DC /* WebViewController.h */,
+				409067F51A8682DC007DA8DC /* WebViewController.m */,
+				4007A6351A941A36009408EC /* OpenPanelController.h */,
+				4007A6361A941A36009408EC /* OpenPanelController.m */,
+				4007A6371A941A36009408EC /* OpenPanelController.xib */,
+				4007A63A1A941ABB009408EC /* SavePanelController.h */,
+				4007A63B1A941ABB009408EC /* SavePanelController.m */,
+				4007A63C1A941ABB009408EC /* SavePanelController.xib */,
+				40481B571DF5302F00D8ABF0 /* SpeechRecognization.h */,
+				40481B581DF5302F00D8ABF0 /* SpeechRecognization.m */,
+				40D3C57020C798850044896D /* BarcodeViewController.h */,
+				40D3C56F20C798840044896D /* BarcodeViewController.m */,
+				409067521A867AAF007DA8DC /* Images.xcassets */,
+				409067541A867AAF007DA8DC /* LaunchScreen.xib */,
+				4010A3A421A681D200E75ADD /* VenderBLEMIDI */,
+				402BB29B1BDA09BC00322544 /* ZipArchive */,
+				409067451A867AAF007DA8DC /* Supporting Files */,
+			);
+			path = "quattro(iOS)";
+			sourceTree = "<group>";
+		};
+		409067451A867AAF007DA8DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				409067461A867AAF007DA8DC /* Info.plist */,
+				409067471A867AAF007DA8DC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4090676E1A867B4B007DA8DC /* quattro(Mac) */ = {
+			isa = PBXGroup;
+			children = (
+				409067711A867B4B007DA8DC /* AppDelegate.h */,
+				409067721A867B4B007DA8DC /* AppDelegate.m */,
+				409067F71A8682ED007DA8DC /* WebViewController.h */,
+				409067F81A8682ED007DA8DC /* WebViewController.m */,
+				40EA80871C8ACBE0008AD896 /* WebViewWindowController.h */,
+				40EA80881C8ACBE0008AD896 /* WebViewWindowController.m */,
+				40EA80891C8ACBE0008AD896 /* WebViewWindowController.xib */,
+				409067761A867B4B007DA8DC /* Images.xcassets */,
+				409067781A867B4B007DA8DC /* MainMenu.xib */,
+				4090676F1A867B4B007DA8DC /* Supporting Files */,
+			);
+			path = "quattro(Mac)";
+			sourceTree = "<group>";
+		};
+		4090676F1A867B4B007DA8DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				409067701A867B4B007DA8DC /* Info.plist */,
+				409067741A867B4B007DA8DC /* main.m */,
+				407EB4EB1BA7D87700B4044A /* App.icns */,
+				407EB4EC1BA7D87700B4044A /* Doc.icns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40C0E09C232A2BE20030B7BF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4010D2962330754300C14A43 /* HTTPConnection.h */,
+				4010D2982330754300C14A43 /* HTTPConnection.m */,
+				4010D2992330754300C14A43 /* HTTPTask.h */,
+				4010D2972330754300C14A43 /* HTTPTask.m */,
+				40C0E0A0232A2BE20030B7BF /* NetServiceDiscovery.h */,
+				40C0E09D232A2BE20030B7BF /* NetServiceDiscovery.m */,
+				40C0E09F232A2BE20030B7BF /* TCPIPClient.h */,
+				40C0E09E232A2BE20030B7BF /* TCPIPClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		40EEF71E1DF81240003C73B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40EEF71F1DF81240003C73B4 /* Speech.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		4012355E1A962B6F00140834 /* Documents */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--project-name 'TDD Software Libraries' --project-company 'Roland Corporation' --create-html --no-create-docset --exit-threshold 1 --output ./Documents --ignore ../../tddlib/mac/JavaScriptInterface ../../tddlib/mac/";
+			buildConfigurationList = 401235611A962B6F00140834 /* Build configuration list for PBXLegacyTarget "Documents" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/appledoc;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = Documents;
+			passBuildSettingsInEnvironment = 0;
+			productName = Documents;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		409067421A867AAF007DA8DC /* quattro(iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 409067631A867AB0007DA8DC /* Build configuration list for PBXNativeTarget "quattro(iOS)" */;
+			buildPhases = (
+				4090673F1A867AAF007DA8DC /* Sources */,
+				409067401A867AAF007DA8DC /* Frameworks */,
+				409067411A867AAF007DA8DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "quattro(iOS)";
+			productName = "quartetto(iOS)";
+			productReference = 409067431A867AAF007DA8DC /* quattro(iOS).app */;
+			productType = "com.apple.product-type.application";
+		};
+		4090676C1A867B4A007DA8DC /* BOSS TONE STUDIO for SY-1000 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 409067871A867B4B007DA8DC /* Build configuration list for PBXNativeTarget "BOSS TONE STUDIO for SY-1000" */;
+			buildPhases = (
+				409067691A867B4A007DA8DC /* Sources */,
+				4090676A1A867B4A007DA8DC /* Frameworks */,
+				4090676B1A867B4A007DA8DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BOSS TONE STUDIO for SY-1000";
+			productName = "quartetto(Mac)";
+			productReference = 4090676D1A867B4A007DA8DC /* BOSS TONE STUDIO for SY-1000.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		409067141A867939007DA8DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Roland Corporation";
+				TargetAttributes = {
+					4012355E1A962B6F00140834 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					409067421A867AAF007DA8DC = {
+						CreatedOnToolsVersion = 6.1.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+					4090676C1A867B4A007DA8DC = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4C6WC6J297;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 409067171A867939007DA8DC /* Build configuration list for PBXProject "quattro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 409067131A867939007DA8DC;
+			productRefGroup = 4090671D1A867939007DA8DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				409067421A867AAF007DA8DC /* quattro(iOS) */,
+				4090676C1A867B4A007DA8DC /* BOSS TONE STUDIO for SY-1000 */,
+				4012355E1A962B6F00140834 /* Documents */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		409067411A867AAF007DA8DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409067561A867AAF007DA8DC /* LaunchScreen.xib in Resources */,
+				401C09501A88D5FA00B1E2E6 /* html in Resources */,
+				4007A6391A941A36009408EC /* OpenPanelController.xib in Resources */,
+				4010A3AF21A681D200E75ADD /* ScanBLEMIDIController.xib in Resources */,
+				409067531A867AAF007DA8DC /* Images.xcassets in Resources */,
+				4007A63E1A941ABB009408EC /* SavePanelController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4090676B1A867B4A007DA8DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407EB4ED1BA7D87700B4044A /* App.icns in Resources */,
+				407EB4EE1BA7D87700B4044A /* Doc.icns in Resources */,
+				409067771A867B4B007DA8DC /* Images.xcassets in Resources */,
+				40EA808B1C8ACBE0008AD896 /* WebViewWindowController.xib in Resources */,
+				401C09511A88D5FA00B1E2E6 /* html in Resources */,
+				4090677A1A867B4B007DA8DC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4090673F1A867AAF007DA8DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40481B591DF5302F00D8ABF0 /* SpeechRecognization.m in Sources */,
+				4010A3AE21A681D200E75ADD /* ScanBLEMIDIController.m in Sources */,
+				4010A3AD21A681D200E75ADD /* BLEMIDIEndpoint.m in Sources */,
+				4037AD221AEDE5820016F4F0 /* JavaScriptInterface.m in Sources */,
+				4010A3AC21A681D200E75ADD /* BLEMIDIConnectionManager.m in Sources */,
+				40C0E0A3232A2BE20030B7BF /* TCPIPClient.m in Sources */,
+				402BB2AA1BDA09BC00322544 /* unzip.c in Sources */,
+				4037AD181AEDE5820016F4F0 /* AudioOutput.m in Sources */,
+				4007A6381A941A36009408EC /* OpenPanelController.m in Sources */,
+				4037AD401AEDE5820016F4F0 /* RWCConnection.m in Sources */,
+				4037AD441AEDE5820016F4F0 /* RWCMIDIService.m in Sources */,
+				4010D29F2330757600C14A43 /* NativeCall+tcpip.m in Sources */,
+				4037AD1C1AEDE5820016F4F0 /* AudioRecorder.m in Sources */,
+				4007A63D1A941ABB009408EC /* SavePanelController.m in Sources */,
+				40D3C57120C798850044896D /* BarcodeViewController.m in Sources */,
+				40335474206CC3B70012189D /* JavaScriptInterface+xhr.m in Sources */,
+				4037AD2E1AEDE5820016F4F0 /* NativeCall+recorder.m in Sources */,
+				4037AD381AEDE5820016F4F0 /* MIDIInputPort.m in Sources */,
+				409067F61A8682DC007DA8DC /* WebViewController.m in Sources */,
+				402BB2AC1BDA09BC00322544 /* ZipArchive.mm in Sources */,
+				40F15C6C2327789A00C9449A /* NativeCall+netservice.m in Sources */,
+				4037AD261AEDE5820016F4F0 /* NativeCall+fs.m in Sources */,
+				4037AD3E1AEDE5820016F4F0 /* RWCAudioOutputStream.m in Sources */,
+				40D3C56D20C78D030044896D /* NativeCall+barcode.m in Sources */,
+				4037AD321AEDE5820016F4F0 /* NativeCall.m in Sources */,
+				4037AD3A1AEDE5820016F4F0 /* MIDIOutputPort.m in Sources */,
+				40481B561DF5300200D8ABF0 /* NativeCall+recognizer.m in Sources */,
+				40CAC61120542B0900C9D54C /* NativeCall+util.m in Sources */,
+				40F430502178DBDF0051ADD5 /* NativeCall+midix.m in Sources */,
+				4037AD481AEDE5820016F4F0 /* RWCNetServer.m in Sources */,
+				4037AD2C1AEDE5820016F4F0 /* NativeCall+player.m in Sources */,
+				40EB7FF52229C24E001DC12F /* timestamp.m in Sources */,
+				4037AD161AEDE5820016F4F0 /* AudioInput.m in Sources */,
+				4090674B1A867AAF007DA8DC /* AppDelegate.m in Sources */,
+				40C0E0A1232A2BE20030B7BF /* NetServiceDiscovery.m in Sources */,
+				402BB2AB1BDA09BC00322544 /* zip.c in Sources */,
+				409FD7AF2224505C00F2AF10 /* NativeCall+tgif.m in Sources */,
+				40ADB77A2271D8AE00CB9FE1 /* NativeCall+sh.m in Sources */,
+				400B39372226D0B800C2D188 /* TGIF.mm in Sources */,
+				4037AD281AEDE5820016F4F0 /* NativeCall+http.m in Sources */,
+				4010D29C2330754300C14A43 /* HTTPConnection.m in Sources */,
+				4037AD361AEDE5820016F4F0 /* MIDIClient.m in Sources */,
+				4010D29A2330754300C14A43 /* HTTPTask.m in Sources */,
+				4037AD461AEDE5820016F4F0 /* RWCNetClient.m in Sources */,
+				4037AD241AEDE5820016F4F0 /* NativeCall+app.m in Sources */,
+				402BB2A91BDA09BC00322544 /* mztools.c in Sources */,
+				4037AD421AEDE5820016F4F0 /* RWCDiscovery.m in Sources */,
+				4037AD341AEDE5820016F4F0 /* NativeProtocol.m in Sources */,
+				4037AD301AEDE5820016F4F0 /* NativeCall+rwc.m in Sources */,
+				405792F22048210100865EDE /* NativeCall+notification.m in Sources */,
+				4084F4282050111E0079C23C /* NativeCall+security.m in Sources */,
+				4037AD2A1AEDE5820016F4F0 /* NativeCall+midi.m in Sources */,
+				4037AD3C1AEDE5820016F4F0 /* RWCAudioInputStream.m in Sources */,
+				402BB2A81BDA09BC00322544 /* ioapi.c in Sources */,
+				409067481A867AAF007DA8DC /* main.m in Sources */,
+				4037AD1A1AEDE5820016F4F0 /* AudioPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409067691A867B4A007DA8DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4037AD331AEDE5820016F4F0 /* NativeCall.m in Sources */,
+				4037AD271AEDE5820016F4F0 /* NativeCall+fs.m in Sources */,
+				40EA808A1C8ACBE0008AD896 /* WebViewWindowController.m in Sources */,
+				4037AD291AEDE5820016F4F0 /* NativeCall+http.m in Sources */,
+				4084F429205011280079C23C /* NativeCall+security.m in Sources */,
+				4037AD3F1AEDE5820016F4F0 /* RWCAudioOutputStream.m in Sources */,
+				4037AD311AEDE5820016F4F0 /* NativeCall+rwc.m in Sources */,
+				4037AD371AEDE5820016F4F0 /* MIDIClient.m in Sources */,
+				4037AD431AEDE5820016F4F0 /* RWCDiscovery.m in Sources */,
+				40EB7FF62229C24E001DC12F /* timestamp.m in Sources */,
+				40F15C6D2327789A00C9449A /* NativeCall+netservice.m in Sources */,
+				4037AD3D1AEDE5820016F4F0 /* RWCAudioInputStream.m in Sources */,
+				4037AD2F1AEDE5820016F4F0 /* NativeCall+recorder.m in Sources */,
+				4037AD351AEDE5820016F4F0 /* NativeProtocol.m in Sources */,
+				4037AD231AEDE5820016F4F0 /* JavaScriptInterface.m in Sources */,
+				409067751A867B4B007DA8DC /* main.m in Sources */,
+				4037AD1B1AEDE5820016F4F0 /* AudioPlayer.m in Sources */,
+				4037AD471AEDE5820016F4F0 /* RWCNetClient.m in Sources */,
+				4037AD171AEDE5820016F4F0 /* AudioInput.m in Sources */,
+				4037AD1D1AEDE5820016F4F0 /* AudioRecorder.m in Sources */,
+				4037AD451AEDE5820016F4F0 /* RWCMIDIService.m in Sources */,
+				4037AD2B1AEDE5820016F4F0 /* NativeCall+midi.m in Sources */,
+				40C0E0A4232A2BE20030B7BF /* TCPIPClient.m in Sources */,
+				4010D2A02330757600C14A43 /* NativeCall+tcpip.m in Sources */,
+				405792F32048265B00865EDE /* NativeCall+notification.m in Sources */,
+				400B39382226D0B800C2D188 /* TGIF.mm in Sources */,
+				409067F91A8682ED007DA8DC /* WebViewController.m in Sources */,
+				4037AD3B1AEDE5820016F4F0 /* MIDIOutputPort.m in Sources */,
+				40CE1A6E1DFE36C30054728E /* NativeCall+recognizer.m in Sources */,
+				4037AD411AEDE5820016F4F0 /* RWCConnection.m in Sources */,
+				4037AD191AEDE5820016F4F0 /* AudioOutput.m in Sources */,
+				4010D29D2330754300C14A43 /* HTTPConnection.m in Sources */,
+				4037AD2D1AEDE5820016F4F0 /* NativeCall+player.m in Sources */,
+				40FFB9452226E1B900A06941 /* NativeCall+tgif.m in Sources */,
+				40F430512178DD9B0051ADD5 /* NativeCall+midix.m in Sources */,
+				4037AD491AEDE5820016F4F0 /* RWCNetServer.m in Sources */,
+				4010D29B2330754300C14A43 /* HTTPTask.m in Sources */,
+				4037AD251AEDE5820016F4F0 /* NativeCall+app.m in Sources */,
+				40ADB77B2271D8AE00CB9FE1 /* NativeCall+sh.m in Sources */,
+				409067731A867B4B007DA8DC /* AppDelegate.m in Sources */,
+				40335475206CC3B90012189D /* JavaScriptInterface+xhr.m in Sources */,
+				4037AD391AEDE5820016F4F0 /* MIDIInputPort.m in Sources */,
+				40C0E0A2232A2BE20030B7BF /* NetServiceDiscovery.m in Sources */,
+				40CAC61220543D0F00C9D54C /* NativeCall+util.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		409067541A867AAF007DA8DC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409067551A867AAF007DA8DC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		409067781A867B4B007DA8DC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409067791A867B4B007DA8DC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4012355F1A962B6F00140834 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		401235601A962B6F00140834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		409067371A86793A007DA8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					ENABLE_APP_EXIT,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		409067381A86793A007DA8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = ENABLE_APP_EXIT;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		409067641A867AB0007DA8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"$(inherited)",
+					USE_WKWEBVIEW,
+					USE_SPEECH_RECOGNIZER,
+					ENABLE_MIDI_NETWORK_SESSION,
+					IGNORE_COREMIDI_NETWORK,
+					VMIDI_IN,
+				);
+				INFOPLIST_FILE = "quattro(iOS)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.roland.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "quattro(iOS)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		409067651A867AB0007DA8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_WKWEBVIEW,
+					USE_SPEECH_RECOGNIZER,
+					IGNORE_COREMIDI_NETWORK,
+				);
+				INFOPLIST_FILE = "quattro(iOS)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.roland.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "quattro(iOS)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		409067881A867B4B007DA8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4C6WC6J297;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					ENABLE_APP_EXIT,
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"$(inherited)",
+					USE_WKWEBVIEW,
+					ENABLE_WEBKIT_DEVELOPER,
+					VMIDI_IN,
+					ENABLE_APP_EXIT,
+				);
+				INFOPLIST_FILE = "quattro(Mac)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.roland.BOSS-TONE-STUDIO-for-SY-1000";
+				PRODUCT_NAME = "BOSS TONE STUDIO for SY-1000";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		409067891A867B4B007DA8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4C6WC6J297;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					ENABLE_APP_EXIT,
+					USE_WKWEBVIEW,
+				);
+				INFOPLIST_FILE = "quattro(Mac)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.roland.BOSS-TONE-STUDIO-for-SY-1000";
+				PRODUCT_NAME = "BOSS TONE STUDIO for SY-1000";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		401235611A962B6F00140834 /* Build configuration list for PBXLegacyTarget "Documents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4012355F1A962B6F00140834 /* Debug */,
+				401235601A962B6F00140834 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409067171A867939007DA8DC /* Build configuration list for PBXProject "quattro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409067371A86793A007DA8DC /* Debug */,
+				409067381A86793A007DA8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409067631A867AB0007DA8DC /* Build configuration list for PBXNativeTarget "quattro(iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409067641A867AB0007DA8DC /* Debug */,
+				409067651A867AB0007DA8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409067871A867B4B007DA8DC /* Build configuration list for PBXNativeTarget "BOSS TONE STUDIO for SY-1000" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409067881A867B4B007DA8DC /* Debug */,
+				409067891A867B4B007DA8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 409067141A867939007DA8DC /* Project object */;
+}

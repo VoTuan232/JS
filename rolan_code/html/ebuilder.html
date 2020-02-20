@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/lib/native.js"></script>
+	<script src="js/utilities/constant.js"></script>
+	<script src="js/utilities/converter.js"></script>
+	<script src="js/config/address_map.js"></script>
+	<script src="js/config/resource.js"></script>
+	<script src="js/config/message.js"></script>
+
+	<script src="ebuilder/widget/widget.js"></script>
+	<script src="ebuilder/widget/page.js"></script>
+	<script src="ebuilder/widget/frame.js"></script>
+	<script src="ebuilder/widget/label.js"></script>
+	<script src="ebuilder/widget/stringer.js"></script>
+	<script src="ebuilder/widget/push_button.js"></script>
+	<script src="ebuilder/widget/latch_button.js"></script>
+	<script src="ebuilder/widget/toggle_button.js"></script>
+	<script src="ebuilder/widget/group_button.js"></script>
+	<script src="ebuilder/widget/menu_button.js"></script>
+	<script src="ebuilder/widget/tab.js"></script>
+	<script src="ebuilder/widget/radio_button.js"></script>
+	<script src="ebuilder/widget/check_box.js"></script>
+	<script src="ebuilder/widget/knob.js"></script>
+	<script src="ebuilder/widget/slider.js"></script>
+	<script src="ebuilder/widget/dial.js"></script>
+	<script src="ebuilder/widget/bar.js"></script>
+	<script src="ebuilder/widget/spinner.js"></script>
+	<script src="ebuilder/widget/select_box.js"></script>
+	<script src="ebuilder/widget/select_list.js"></script>
+	<script src="ebuilder/widget/select_panel.js"></script>
+	<script src="ebuilder/widget/text_input.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="ebuilder/ebuilder.css" />
+
+	<script src="ebuilder/edit.js"></script>
+	<script src="ebuilder/event.js"></script>
+	<script src="ebuilder/property.js"></script>
+	<script src="ebuilder/export.js"></script>
+	<script src="ebuilder/helper.js"></script>
+	<script src="ebuilder/ebuilder.js"></script>
+
+</head>
+<body oncontextmenu="return false">
+
+<!-- ebuilder main -->
+<div id="e-container">
+	<div id="e-menu-wrapper">
+		<button class="e-menu-style-button" id="e-load">Load</button>
+		<button class="e-menu-style-button" id="e-save" disabled="true">Save</button>
+		<button class="e-menu-style-button" id="e-save-as">Save As</button>
+		<span class="e-button-separator"></span>
+		<button class="e-menu-style-button" id="e-export">Export</button>
+	</div>
+	<div id="e-toolbar-wrapper">
+		<button class="e-tool-style-button" id="e-reload"  style="float:right">Reload</button>
+
+		<button class="e-tool-style-button" id="e-undo" disabled="true">Undo</button>
+		<button class="e-tool-style-button" id="e-redo" disabled="true">Redo</button>
+		<span class="e-button-separator"></span>
+		<button class="e-tool-style-button" id="e-cut"   disabled="true">Cut</button>
+		<button class="e-tool-style-button" id="e-copy"  disabled="true">Copy</button>
+		<button class="e-tool-style-button" id="e-paste" disabled="true">Paste</button>
+		<span class="e-button-separator"></span>
+		<button class="e-tool-style-button" id="e-delete" disabled="true">Delete</button>
+		<span class="e-button-separator"></span>
+		<label><input type="checkbox" class="e-tool-style-checkbox" id="e-grid" checked="true"/>Grid</label>
+		<input type="text" class="e-tool-style-text" size="2" id="e-grid-step" value="10" />
+		<button class="e-tool-style-button" id="e-align-left">←</button>
+		<button class="e-tool-style-button" id="e-align-top">↑</button>
+		<button class="e-tool-style-button" id="e-align-right">→</button>
+		<button class="e-tool-style-button" id="e-align-bottom">↓</button>
+		<button class="e-tool-style-button" id="e-center-horizontal">|</button>
+		<button class="e-tool-style-button" id="e-center-vertical">―</button>
+		<span class="e-button-separator"></span>
+		<label>Spacing</label>
+		<input type="text" class="e-tool-style-text" size="2" id="e-space" value="" />
+		<button class="e-tool-style-button" id="e-spacing">｜－｜</button>
+		<button class="e-tool-style-button" id="e-equal-spacing">｜＝｜</button>
+		<span class="e-button-separator"></span>
+		<select id="e-language"></select>
+		<span class="e-button-separator"></span>
+		<label><input type="checkbox" class="e-tool-style-checkbox" id="e-inspect" />Inspect</label>
+	</div>
+	<div id="e-client-wrapper">
+		<div id="e-left-sidebar">
+			<div id="e-left-sidebar-header" class="e-sidebar-header">
+				<button class="e-header-style-button" id="e-items">Items</button>
+				<button class="e-header-style-button" id="e-pages">Pages</button>
+				<button class="e-header-style-button e-header-style-button-right e-expand">&gt</button>
+			</div>
+			<div id="e-left-sidebar-content" class="e-sidebar-content">
+				<div class="e-sidebar-list-item" id="label"         > <img src="ebuilder/res/label.png"        > Label         </img></div>
+				<div class="e-sidebar-list-item" id="stringer"      > <img src="ebuilder/res/stringer.png"     > Stringer      </img></div>
+				<div class="e-sidebar-list-item" id="push-button"   > <img src="ebuilder/res/push-button.png"  > Push button   </img></div>
+				<div class="e-sidebar-list-item" id="latch-button"  > <img src="ebuilder/res/latch-button.png" > Latch button  </img></div>
+				<div class="e-sidebar-list-item" id="check-box"     > <img src="ebuilder/res/check-box.png"    > Check box     </img></div>
+				<div class="e-sidebar-list-item" id="radio-button"  > <img src="ebuilder/res/radio-button.png" > Radio button  </img></div>
+				<div class="e-sidebar-list-item" id="group-button"  > <img src="ebuilder/res/group-button.png" > Group button  </img></div>
+				<div class="e-sidebar-list-item" id="menu-button"   > <img src="ebuilder/res/menu-button.png"  > Menu button   </img></div>
+				<div class="e-sidebar-list-item" id="toggle-button" > <img src="ebuilder/res/toggle-button.png"> Toggle button </img></div>
+				<div class="e-sidebar-list-item" id="tab"           > <img src="ebuilder/res/tab.png"          > Tab           </img></div>
+				<div class="e-sidebar-list-item" id="knob"          > <img src="ebuilder/res/knob.png"         > Knob          </img></div>
+				<div class="e-sidebar-list-item" id="slider"        > <img src="ebuilder/res/slider.png"       > Slider        </img></div>
+				<div class="e-sidebar-list-item" id="dial"          > <img src="ebuilder/res/dial.png"         > Dial          </img></div>
+				<div class="e-sidebar-list-item" id="bar"           > <img src="ebuilder/res/bar.png"          > Bar           </img></div>
+				<div class="e-sidebar-list-item" id="spinner"       > <img src="ebuilder/res/spinner.png"      > Spinner       </img></div>
+				<div class="e-sidebar-list-item" id="select-box"    > <img src="ebuilder/res/select-box.png"   > Select box    </img></div>
+				<div class="e-sidebar-list-item" id="select-list"   > <img src="ebuilder/res/select-list.png"  > Select list   </img></div>
+				<div class="e-sidebar-list-item" id="select-panel"  > <img src="ebuilder/res/select-panel.png" > Select panel  </img></div>
+				<div class="e-sidebar-list-item" id="text-input"    > <img src="ebuilder/res/text-input.png"   > Text input    </img></div>
+				<div class="e-sidebar-list-item" id="frame"         > <img src="ebuilder/res/frame.png"        > Frame         </img></div>
+			</div>
+			<div id="e-left-sidebar-fixed-pane" style="display:none;">
+				<div id="e-sidebar-list-page-wrapper"></div>
+				<button id="e-append-page" class="e-page-style-button">+</button>
+				<button id="e-down-page" class="e-page-style-button e-page-style-button-right">↓</button>
+				<button id="e-up-page" class="e-page-style-button e-page-style-button-right">↑</button>
+			</div>
+		</div>
+		<div id="e-hierarchy-wrapper" style="display:none;">
+			<div id="e-hierarchy-header" class="e-sidebar-header">
+				<button class="e-header-style-button e-expand">&lt</button>
+				<label>Search id</label>
+				<input type="text" class="e-header-style-text" id="e-search" value="" />
+				<button class="e-header-style-button e-header-style-button-right" id="e-insert-page">+</button>
+			</div>
+			<div id="e-hierarchy-content" class="e-sidebar-content">
+				<div id="e-hierarchy-list-wrapper"></div>
+			</div>
+		</div>
+		<div id="e-stage-wrapper">
+			<div id="e-edit-wrapper">
+				<canvas id="e-canvas"></canvas>
+				<div id="e-edit-stage"></div>
+			</div>
+		</div>
+		<div id="e-right-sidebar">
+			<div id="e-right-sidebar-content"></div>
+			<div id="e-right-sidebar-bottom"></div>
+		</div>
+	</div>
+
+	<div class="e-right-side-fixed-pane" id="e-address-map-pane" style="display:none;">
+		<div id="e-address-map-treeview"></div>
+	</div>
+	<div class="e-right-side-fixed-pane" id="e-resource-pane" style="display:none;">
+		<div id="e-resource-table"></div>
+	</div>
+	<div class="e-right-side-fixed-pane" id="e-message-pane" style="display:none;">
+		<div id="e-message-table"></div>
+	</div>
+	<div class="e-right-side-fixed-pane" id="e-reuse-pane" style="display:none;">
+		<div id="e-reuse-table"></div>
+	</div>
+
+	<button id="e-refresh" style="display:none;">Refresh</button>
+
+</div>
+
+<div id="e-modal-dialog-wrapper" style="display:none;">
+	<div id="e-modal-dialog">
+		<p class="e-title"></p>
+		<button class="e-button-yes">Yes</button>
+		<button class="e-button-no" >No</button>
+	</div>
+</div>
+
+<!-- for border width of widget.create$ -->
+<div id="create-tmp" style="display:none;"></div>
+
+<!-- for export -->
+<div id="e-output" style="display:none;">
+  <div id="layout-wrapper"></div>
+</div>
+
+</body>
+</html>

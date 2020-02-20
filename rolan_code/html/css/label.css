@@ -1,0 +1,29 @@
+/*
+  Copyright 2016 Roland Corporation. All rights reserved.
+
+  <div id="a" class="item-label-style">
+      <p>text</p>
+  </div>
+*/
+
+.item-label-style {
+  position: absolute;
+  clear: both;
+  display: table;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  color: #000;
+  border: 1px solid #ccc;
+}
+.item-label-style p {
+  display: table-cell;
+  vertical-align: middle;
+
+  line-height: 100%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}

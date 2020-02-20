@@ -1,0 +1,53 @@
+■ Ebuilder_manual_rev5_2 からの変更点
+
+--------------------------------------------------------------------------------
+2017.10.19 horikiyo
+
+○機能追加・変更
+・Items に "Tab"、"Toogle button" を追加。
+・Pages のページの順序変更はマウスドラッグで変更可能。
+・プロパティ・エリアの下部に、現在選択されているページのアイテム一覧を表示。
+・重ね順ボタンを廃止。アイテムの順序の変更は、プロパティ・エリア下部のアイテム一覧を
+　マウスドラッグすることで変更する。
+・alt + click でアイテムの Lock/Unlock に対応。
+
+○プロパティ変更
+・Page
+	- style の page-popup-style を廃止。page-fix-style（幅と高さが固定のページ）を追加。
+	- wrapper-style を追加。
+	　指定すると Push button で popup する際の wrapper-style として利用されます。
+
+・Push button
+	- popup の対象 を page-popup-style（廃止）ではなく、target-frame が設定されていない
+	　ページを対象とするように変更。
+
+・Group button
+	- use-label-width を追加。
+
+・Knob, Dial, Slider, Bar
+	- dblclick-handler を追加。
+	- description を 追加。touch-handler や dblclick-handler 内の処理で
+	　attr('description')で取得可能、アイテム名表示などに利用できます。
+
+・Knob
+	- angle-specified を追加。内部の値に対し、任意の角度を配列で指定できます。
+
+・Bar
+	- linking の名称を range-type に変更。
+
+・Slider
+	- range-type に対応。
+	- step-guide を追加。
+・Select box
+	- bax-width を追加。選択 box の幅を指定できます。
+	- menu-style, menu-title を追加。メニューとして利用できます。
+
+・Select list/panel
+	- popup-class, popup-header-class, popup-option-class を追加。
+	　ポップアップ時の css style を指定できます。
+	　指定しない場合は、デフォルトの css style が適応されます。
+	- caption を追加。リスト選択画面の見出しに利用されます。
+
+・Select panel
+	- max-width を廃止。css style（popup-option-class）側で指定してください。
+--------------------------------------------------------------------------------

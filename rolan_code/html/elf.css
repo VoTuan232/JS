@@ -1,0 +1,97 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font: 12pt Helvetica,Arial,sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0; padding: 0;
+}
+
+#menu {
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  width: 100%;
+  height: 3em;
+  padding: 8px;
+}
+
+#system_view, #editor_view, #librarian_view, #parameter_view {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  top: 3em;
+  bottom: 0;
+  padding: 8px;
+}
+#editor_view {
+  padding: 0;
+}
+
+#editor_menu {
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  width: 100%;
+  height: 12em;
+  padding: 8px;
+}
+
+.export {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  top: 12em;
+  bottom: 0;
+}
+
+.export iframe {
+  position: absolute;
+  width: 100%; height: 100%;
+  left: 0; right: 0; top: 0; bottom: 0;
+  margin: auto;
+}
+
+td, th {
+  border: 1px solid #DDD;
+}
+
+button {
+  display: inline-block;
+  background: #EEE;
+  color: #111;
+  border: 3px solid #DDD;
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+}
+
+button:disabled {
+  color: #888;
+}
+
+button:hover {
+  background-color: #AAA;
+}
+
+input[type="radio"] {
+  display: none; 
+}
+
+input[type="radio"]:checked + .tab {
+  background: red;
+  color: white;
+  padding: 2px;
+  margin: 2px;
+}
+
+span.tab {
+  background: #DDD;
+  color: #444;
+  padding: 2px;
+  margin: 2px;
+}

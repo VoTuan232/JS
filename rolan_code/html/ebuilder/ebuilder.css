@@ -1,0 +1,381 @@
+#e-canvas {
+  position: absolute;
+  left: 0; top: 0;
+  color: #ccc;
+  background: white;
+}
+
+#e-container {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  background: white;
+}
+
+#e-menu-wrapper {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+#e-toolbar-wrapper {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  height: 50px;
+  top: 50px;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+#e-client-wrapper {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  top: 100px;
+  bottom: 0;
+}
+
+#e-left-sidebar {
+  position: absolute;
+  overflow: auto;
+  width: 150px;
+  height: 100%;
+  left: 0;
+  border-right: 1px solid #ccc;
+}
+
+#e-hierarchy-wrapper {
+  position: absolute;
+  overflow: auto;
+  width: 300px;
+  height: 100%;
+  left: 150px;
+  border-right: 1px solid #ccc;
+}
+
+#e-stage-wrapper {
+  position: absolute;
+  overflow: auto;
+  height: 100%;
+  left: 150px;
+  right: 400px;
+  background: #eee;
+}
+
+#e-edit-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0; right: 0; bottom: 0;
+/* margin: auto; */
+}
+
+#e-edit-stage {
+  position: absolute;
+  left: 0; top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#e-right-sidebar {
+  position: absolute;
+  overflow: auto;
+  width: 400px;
+  height: 100%;
+  right: 0;
+  border-left: 1px solid #ccc;
+}
+
+.e-sidebar-header {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5px;
+}
+
+.e-sidebar-content {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  top: 50px;
+  bottom: 0;
+}
+
+#e-right-sidebar-content *, .e-tool-style-text {
+          user-select: text;
+     -moz-user-select: text;
+  -webkit-user-select: text;
+}
+
+#e-right-sidebar-content {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  height: 600px;
+  top: 0;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+#e-right-sidebar-bottom {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  top: 600px;
+  bottom: 0;
+  padding: 5px;
+}
+
+.e-sidebar-list-item {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 0;
+  color: #822;
+  font: 9pt Helvetica,Arial,sans-serif;
+  padding-bottom: 60%;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+.e-sidebar-list-item:hover {
+  background-color: #eea;
+}
+
+#e-left-sidebar-fixed-pane {
+  position: fixed;
+  overflow: auto;
+  width: 150px;
+  top: 150px;
+  bottom: 0;
+  background: white;
+  border-left: 1px solid #ccc;
+  padding: 10px;
+}
+
+.e-sidebar-list-page {
+  margin-bottom: 5px;
+  padding: 5px;
+  min-width: 120px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.e-current-page {
+  color: white;
+  background: #006ce5;
+}
+
+.e-right-side-fixed-pane {
+  position: fixed;
+  overflow: auto;
+  top: 100px;
+  bottom: 0;
+  right: 0;
+  width: 75%;
+  background: white;
+  border-left: 1px solid #ccc;
+  padding: 10px;
+}
+
+#e-modal-dialog-wrapper {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#e-modal-dialog {
+  position: absolute;
+  width: 250px;
+  height: 6em;
+  left: 0; top: 0; right: 0; bottom: 0;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1.0);
+}
+
+.e-button-yes {
+  min-width: 80px;
+  margin-right: 5px;
+  padding: 5px;
+  background: #44e;
+  border: 3px solid #ccc;
+  border-radius: 8px;
+}
+
+.e-button-no {
+  min-width: 80px;
+  margin-right: 5px;
+  padding: 5px;
+  background: #888;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.e-button-separator {
+  margin-right: 10px;
+  border-left: 3px solid #ccc;
+}
+
+.e-menu-style-button {
+  min-width: 80px;
+  margin-right: 5px;
+  padding: 5px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.e-menu-style-button:hover {
+  background: white;
+}
+
+.e-menu-style-button:disabled {
+  color: #ccc;
+  background: #eee;
+}
+
+.e-tool-style-button {
+  clear: float;
+  min-width: 50px;
+  margin-right: 5px;
+  padding: 5px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.e-tool-style-button:hover {
+  color: white;
+  background: #006ce5;
+}
+
+.e-tool-style-button:disabled {
+  color: #ccc;
+  background: #eee;
+}
+
+.e-header-style-button {
+  min-width: 1em;
+  margin-right: 5px;
+  padding: 5px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.e-header-style-button-right {
+  float: right;
+}
+
+.e-header-style-button:hover {
+  background: #eea;
+}
+
+.e-page-style-button {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+
+.e-page-style-button-right {
+  float: right;
+}
+
+.e-page-style-button:hover {
+  background: #eea;
+}
+
+#e-right-sidebar-content table {
+  font: 9pt Helvetica,Arial,sans-serif;
+}
+
+#e-right-sidebar-content tr:nth-child(even) {
+  background: #eee;
+}
+
+#e-right-sidebar-content th, td {
+  white-space:nowrap
+}
+
+.e-property-style-button {
+  width: 30px;
+  height: 20px;
+  border-radius: 4px;
+  background: #eea;
+  border: 1px solid #ccc;
+}
+
+.e-inspector-style-button {
+  margin-bottom: 5px;
+  padding: 8px;
+  width: 100%;
+  text-align: left;
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+.e-inspector-style-button:hover {
+  background: #eea;
+}
+
+#e-hierarchy-list-wrapper div {
+  margin-left: 0.5em;
+  color: #88e;
+}
+#e-hierarchy-list-wrapper .e-deferred {
+  color: #bbe;
+}
+#e-hierarchy-list-wrapper .e-current {
+  color: #e88;
+}
+#e-hierarchy-list-wrapper .e-hierarchy-frame {
+  color: #ccc;
+}
+
+#e-address-map-treeview ul li .e-parameter {
+  margin-left: 1em;
+  color: #88e;
+}
+
+#e-address-map-treeview span:hover {
+  background: #eea;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.e-resue {
+  background: #ecc;
+}
+
+#e-reuse-table {
+  width: 0;
+}
+
+#e-resource-table td, #e-message-table td,
+#e-reuse-table th, #e-reuse-table td {
+  border: 1px solid #ccc;
+}
+
+#e-resource-table tr:hover, #e-message-table tr:hover {
+  background: #eea;
+}
+
+#e-resource-table td img {
+  max-width: 48px; max-height: 48px;
+}

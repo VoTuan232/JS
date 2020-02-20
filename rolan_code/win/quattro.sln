@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "quattro", "quattro.vcxproj", "{68747E29-A415-4EB5-8A37-C93E40930AE4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6325106-B754-4E66-9204-5DEB0D0DFA21} = {A6325106-B754-4E66-9204-5DEB0D0DFA21}
+		{8F87C14B-4942-4B95-A0C3-6F9B13E838E0} = {8F87C14B-4942-4B95-A0C3-6F9B13E838E0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcef_dll_wrapper", "..\contributed\cef_binary_windows32\build\libcef_dll_wrapper\libcef_dll_wrapper.vcxproj", "{8F87C14B-4942-4B95-A0C3-6F9B13E838E0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cef_plugins", "cef\cef_plugins\cef_plugins.vcxproj", "{A6325106-B754-4E66-9204-5DEB0D0DFA21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68747E29-A415-4EB5-8A37-C93E40930AE4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68747E29-A415-4EB5-8A37-C93E40930AE4}.Debug|Win32.Build.0 = Debug|Win32
+		{68747E29-A415-4EB5-8A37-C93E40930AE4}.Release|Win32.ActiveCfg = Release|Win32
+		{68747E29-A415-4EB5-8A37-C93E40930AE4}.Release|Win32.Build.0 = Release|Win32
+		{8F87C14B-4942-4B95-A0C3-6F9B13E838E0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F87C14B-4942-4B95-A0C3-6F9B13E838E0}.Debug|Win32.Build.0 = Debug|Win32
+		{8F87C14B-4942-4B95-A0C3-6F9B13E838E0}.Release|Win32.ActiveCfg = Release|Win32
+		{8F87C14B-4942-4B95-A0C3-6F9B13E838E0}.Release|Win32.Build.0 = Release|Win32
+		{A6325106-B754-4E66-9204-5DEB0D0DFA21}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A6325106-B754-4E66-9204-5DEB0D0DFA21}.Debug|Win32.Build.0 = Debug|Win32
+		{A6325106-B754-4E66-9204-5DEB0D0DFA21}.Release|Win32.ActiveCfg = Release|Win32
+		{A6325106-B754-4E66-9204-5DEB0D0DFA21}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

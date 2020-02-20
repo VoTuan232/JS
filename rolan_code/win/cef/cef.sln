@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cef_process", "cef_process\cef_process.vcxproj", "{FCEAF34F-2B9E-467B-9618-44FD940A5149}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F87C14B-4942-4B95-A0C3-6F9B13E838E0} = {8F87C14B-4942-4B95-A0C3-6F9B13E838E0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cef_plugins", "cef_plugins\cef_plugins.vcxproj", "{A6325106-B754-4E66-9204-5DEB0D0DFA21}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cef_startup", "cef_startup\cef_startup.vcxproj", "{1D548377-83E7-4E42-A309-F1B7E588C947}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F87C14B-4942-4B95-A0C3-6F9B13E838E0} = {8F87C14B-4942-4B95-A0C3-6F9B13E838E0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcef_dll_wrapper", "..\..\contributed\cef_binary_windows32\build\libcef_dll_wrapper\libcef_dll_wrapper.vcxproj", "{8F87C14B-4942-4B95-A0C3-6F9B13E838E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCEAF34F-2B9E-467B-9618-44FD940A5149}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FCEAF34F-2B9E-467B-9618-44FD940A5149}.Debug|Win32.Build.0 = Debug|Win32
+		{FCEAF34F-2B9E-467B-9618-44FD940A5149}.Release|Win32.ActiveCfg = Release|Win32
+		{FCEAF34F-2B9E-467B-9618-44FD940A5149}.Release|Win32.Build.0 = Release|Win32
+		{A6325106-B754-4E66-9204-5DEB0D0DFA21}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A6325106-B754-4E66-9204-5DEB0D0DFA21}.Debug|Win32.Build.0 = Debug|Win32
+		{A6325106-B754-4E66-9204-5DEB0D0DFA21}.Release|Win32.ActiveCfg = Release|Win32
+		{A6325106-B754-4E66-9204-5DEB0D0DFA21}.Release|Win32.Build.0 = Release|Win32
+		{1D548377-83E7-4E42-A309-F1B7E588C947}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1D548377-83E7-4E42-A309-F1B7E588C947}.Debug|Win32.Build.0 = Debug|Win32
+		{1D548377-83E7-4E42-A309-F1B7E588C947}.Release|Win32.ActiveCfg = Release|Win32
+		{1D548377-83E7-4E42-A309-F1B7E588C947}.Release|Win32.Build.0 = Release|Win32
+		{8F87C14B-4942-4B95-A0C3-6F9B13E838E0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F87C14B-4942-4B95-A0C3-6F9B13E838E0}.Debug|Win32.Build.0 = Debug|Win32
+		{8F87C14B-4942-4B95-A0C3-6F9B13E838E0}.Release|Win32.ActiveCfg = Release|Win32
+		{8F87C14B-4942-4B95-A0C3-6F9B13E838E0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,73 @@
+/**
+Dial内のfontサイズを縮小
+ */
+
+#aird-preamp-1-gain_sw-stringer p,
+#aird-preamp-2-gain_sw-stringer p {
+    font-size: 15px !important;
+}
+
+#ns-1-detect-stringer p,
+#ns-2-detect-stringer p {
+    font-size: 15px !important;
+}
+
+#foot-volume-volume_curve-stringer p {
+    font-size: 15px !important;
+}
+
+#master-key-stringer p {
+    font-size: 15px !important;
+}
+
+#delay-1-time-stringer p,
+#delay-2-time-stringer p,
+#delay-3-time-stringer p,
+#delay-4-time-stringer p,
+#master-delay-wrap-1-time-stringer p,
+#master-delay-wrap-5-1-d1_time-stringer p,
+#master-delay-wrap-5-2-d2_time-stringer p {
+    font-size: 15px !important;
+}
+
+#master-delay-wrap-2-time-stringer p,
+#master-delay-wrap-3-time-stringer p,
+#master-delay-wrap-4-time-stringer p {
+    font-size: 15px !important;
+}
+
+#assign-midi-ch-1-stringer p,
+#assign-midi-ch-2-stringer p {
+    font-size: 15px !important;
+}
+
+/**
+ *  pc
+ */
+
+/** 15pxだと入りきらないため、再度定義 **/
+
+#ns-1-detect-stringer p,
+#ns-2-detect-stringer p {
+    font-size: 12px !important;
+}
+
+#foot-volume-volume_curve-stringer p {
+    font-size: 12px !important;
+}
+
+#master-key-stringer p {
+    font-size: 14px !important;
+}
+
+#chorus-2-output_mode-stringer p {
+    font-size: 15px !important;
+}
+
+#master-delay-time-stringer p,
+#master-delay-analog-time-stringer p,
+#master-delay-dual-d1_time-stringer p,
+#master-delay-dual-d2_time-stringer p,
+#master-delay-warp-time-stringer p {
+    font-size: 15px !important;
+}

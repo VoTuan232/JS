@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{53311a67-2647-483f-b692-0664e6fe64c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Audio">
+      <UniqueIdentifier>{d3b46a1b-6667-4d1a-8085-11df3f6af10a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Common">
+      <UniqueIdentifier>{d1f8eabf-375b-40bb-a4b4-c12cca1f008b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\JavascriptInterface">
+      <UniqueIdentifier>{436a1a9a-9db5-4dcc-ab76-46c7fe56866a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\MIDIClient">
+      <UniqueIdentifier>{145f0d77-3f80-47a9-a499-47ff4bdce242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\RolandWirelessConnect">
+      <UniqueIdentifier>{144e974b-e6fe-4e03-9970-ebe29b263fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\UWPMIDIPort">
+      <UniqueIdentifier>{91bd40fc-1165-47e0-bb0f-725f26ac840f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Sound">
+      <UniqueIdentifier>{bf569df0-7475-4eaa-8791-b30bfa235aa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Network">
+      <UniqueIdentifier>{aeb12996-1646-4728-9162-88b6797138dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Libraries\Audio\AudioInputUnit.cpp">
+      <Filter>Libraries\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Audio\AudioOutputUnit.cpp">
+      <Filter>Libraries\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Audio\AudioPlayer.cpp">
+      <Filter>Libraries\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Audio\AudioRecorder.cpp">
+      <Filter>Libraries\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Common\Bundle.cpp">
+      <Filter>Libraries\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Common\Registry.cpp">
+      <Filter>Libraries\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Common\Thread.cpp">
+      <Filter>Libraries\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Common\VolumeEject.cpp">
+      <Filter>Libraries\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\CefApp.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\JavaScriptInterface.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+app.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+fs.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+http.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+midi.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+player.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+recorder.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+rwc.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeConverters.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeObjects.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\MIDIClient\MIDIClient.cpp">
+      <Filter>Libraries\MIDIClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\MIDIClient\MIDIInputEndpoint.cpp">
+      <Filter>Libraries\MIDIClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\MIDIClient\MIDIInputPort.cpp">
+      <Filter>Libraries\MIDIClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\MIDIClient\MIDIOutputPort.cpp">
+      <Filter>Libraries\MIDIClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\RolandWirelessConnect\RWCAudioInputStream.cpp">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\RolandWirelessConnect\RWCAudioOutputStream.cpp">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\RolandWirelessConnect\RWCConnection.cpp">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\RolandWirelessConnect\RWCDiscovery.cpp">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\RolandWirelessConnect\RWCMIDIService.cpp">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\RolandWirelessConnect\RWCNetClient.cpp">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\RolandWirelessConnect\RWCNetServer.cpp">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\CefMessage.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+recognizer.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\UWPMIDIPort\UWPMIDIInputPort.cpp">
+      <Filter>Libraries\UWPMIDIPort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\UWPMIDIPort\UWPMIDIOutputPort.cpp">
+      <Filter>Libraries\UWPMIDIPort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\UWPMIDIPort\UWPMIDIPort.cpp">
+      <Filter>Libraries\UWPMIDIPort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+notification.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+security.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Common\Crypto.cpp">
+      <Filter>Libraries\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+util.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\UWPMIDIPort\UWPMIDIInputEndpoint.cpp">
+      <Filter>Libraries\UWPMIDIPort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+barcode.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+midix.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Sound\TGIF.cpp">
+      <Filter>Libraries\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+tgif.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Sound\SoundEngine.cpp">
+      <Filter>Libraries\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Common\Process.cpp">
+      <Filter>Libraries\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+sh.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+netservice.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\JavaScriptInterface\NativeCall+tcpip.cpp">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Network\HTTPConnection.cpp">
+      <Filter>Libraries\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Network\HTTPDownload.cpp">
+      <Filter>Libraries\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Network\HTTPTask.cpp">
+      <Filter>Libraries\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Network\HTTPUpload.cpp">
+      <Filter>Libraries\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Network\Socket.cpp">
+      <Filter>Libraries\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\Network\TCPIPClient.cpp">
+      <Filter>Libraries\Network</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Libraries\Audio\AudioInputStream.h">
+      <Filter>Libraries\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Audio\AudioInputUnit.h">
+      <Filter>Libraries\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Audio\AudioOutputStream.h">
+      <Filter>Libraries\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Audio\AudioOutputUnit.h">
+      <Filter>Libraries\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Audio\AudioPlayer.h">
+      <Filter>Libraries\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Audio\AudioRecorder.h">
+      <Filter>Libraries\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Common\Bundle.h">
+      <Filter>Libraries\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Common\Registry.h">
+      <Filter>Libraries\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Common\Thread.h">
+      <Filter>Libraries\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Common\Timer.h">
+      <Filter>Libraries\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Common\VolumeEject.h">
+      <Filter>Libraries\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\JavaScriptInterface\CefApp.h">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\JavaScriptInterface\JavaScriptInterface.h">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\JavaScriptInterface\NativeCall.h">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\JavaScriptInterface\NativeConverters.h">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\JavaScriptInterface\NativeObjects.h">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\JavaScriptInterface\picojson.h">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\MIDIClient\MIDIClient.h">
+      <Filter>Libraries\MIDIClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\MIDIClient\MIDIInputEndpoint.h">
+      <Filter>Libraries\MIDIClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\MIDIClient\MIDIInputPort.h">
+      <Filter>Libraries\MIDIClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\MIDIClient\MIDIOutputEndpoint.h">
+      <Filter>Libraries\MIDIClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\MIDIClient\MIDIOutputPort.h">
+      <Filter>Libraries\MIDIClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\RolandWirelessConnect\RWCAudioInputStream.h">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\RolandWirelessConnect\RWCAudioOutputStream.h">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\RolandWirelessConnect\RWCConnection.h">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\RolandWirelessConnect\RWCDiscovery.h">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\RolandWirelessConnect\RWCMIDIService.h">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\RolandWirelessConnect\RWCNetClient.h">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\RolandWirelessConnect\RWCNetServer.h">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\RolandWirelessConnect\RWCProtocol.h">
+      <Filter>Libraries\RolandWirelessConnect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\JavaScriptInterface\CefMessage.h">
+      <Filter>Libraries\JavascriptInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\UWPMIDIPort\UWPMIDIInputPort.h">
+      <Filter>Libraries\UWPMIDIPort</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\UWPMIDIPort\UWPMIDIOutputPort.h">
+      <Filter>Libraries\UWPMIDIPort</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\UWPMIDIPort\UWPMIDIPort.h">
+      <Filter>Libraries\UWPMIDIPort</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Common\Crypto.h">
+      <Filter>Libraries\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\UWPMIDIPort\UWPMIDIInputEndpoint.h">
+      <Filter>Libraries\UWPMIDIPort</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Sound\TGIF.h">
+      <Filter>Libraries\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Sound\SoundEngine.h">
+      <Filter>Libraries\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Common\Process.h">
+      <Filter>Libraries\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Network\HTTPConnection.h">
+      <Filter>Libraries\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Network\HTTPDownload.h">
+      <Filter>Libraries\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Network\HTTPTask.h">
+      <Filter>Libraries\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Network\HTTPUpload.h">
+      <Filter>Libraries\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Network\Socket.h">
+      <Filter>Libraries\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\Network\TCPIPClient.h">
+      <Filter>Libraries\Network</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

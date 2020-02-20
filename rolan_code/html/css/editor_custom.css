@@ -1,0 +1,17 @@
+.custom-img-master-gk {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inst-trigger-btn-mousedown, .inst-trigger-btn-mousedown[style*='color: rgb(255, 255, 255);']:not(.disabled):hover {
+    background: #33D6FF !important;
+    background-color: #33D6FF !important;
+    color: #000000 !important;
+}
+
+.inst-trigger-btn-mouseup, .inst-trigger-btn-mouseup[style*='color: rgb(255, 255, 255);']:not(.disabled):hover {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #ffffff !important;
+}

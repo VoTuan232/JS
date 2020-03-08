@@ -3,3 +3,6 @@ For ...of: get value(new ES 6), ko lặp trên các đối tượng đặc biệ
 
 For...in tối ưu hóa cho các object, ko pải array => chậm hơn 10 tới 100 lần. nhưng vẫn rất nhanh
 ==> ko nên sử dụng for...in cho mảng
+
+For...in: sử dụng cho object
+For...of: sử dụng cho array

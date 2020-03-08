@@ -38,10 +38,3 @@ let oldCar = {
 for (let key in oldCar) {
     console.log(`${key} --> ${oldCar[key]}`);
 }
-
-let str1 = 'Turn the page';
-
-for (let index in str1) {
-    console.log(`Index of ${str1[index]}: ${index}`);
-}
-

@@ -1,6 +1,18 @@
 'use strict';
 
-const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+const x = {};
 
-console.log(animals.splice(2, 1));
-console.log(animals);
+x['Monday'] = [{
+    id: 1,
+    name: 'vat'
+}]
+
+let y = {
+    id: 2,
+    name: 'hoa'
+}
+console.log(Array.isArray(x['Monday']))
+console.log(Array.isArray(...x['Monday']))
+console.log(...x['Monday'])
+x['Monday'] = [...x['Monday'], y]
+console.log(x)

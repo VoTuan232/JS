@@ -1,25 +1,23 @@
 "use strict";
 
-let firstDuplicate = data => {
-  let a = [];
-  for (let i = 0; i < data.length; i++) {
-    if (a.indexOf(data[i]) > -1) {
-      return data[i];
-    }
-    a.push(data[i]);
-  }
+// let firstDuplicate = data => {
+//   let a = [];
+//   for (let i = 0; i < data.length; i++) {
+//     if (a.indexOf(data[i]) > -1) {
+//       return data[i];
+//     }
+//     a.push(data[i]);
+//   }
+//   return -1;
+// };
+
+firstDuplicate = a => {
+  r = new Set();
+  for (e of a)
+    if (r.has(e)) return e;
+    else r.add(e);
   return -1;
 };
-
-// firstDuplicate = a => {
-//   r = new Set()
-//   for (e of a)
-//       if (r.has(e))
-//           return e
-//       else
-//           r.add(e)
-//   return -1
-// }
 
 // let data = [2, 1, 3, 5, 3, 2];
 

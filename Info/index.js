@@ -1,18 +1,16 @@
-'use strict';
+var arr = [];
+var rows = 11;
+var columns = 12;
 
-const x = {};
+fill2DimensionsArray(arr, rows, columns);
 
-x['Monday'] = [{
-    id: 1,
-    name: 'vat'
-}]
-
-let y = {
-    id: 2,
-    name: 'hoa'
+function fill2DimensionsArray(arr, rows, columns) {
+  for (var i = 0; i < rows; i++) {
+    arr.push([0]);
+    for (var j = 0; j < columns; j++) {
+      arr[i][j] = 0;
+    }
+  }
 }
-console.log(Array.isArray(x['Monday']))
-console.log(Array.isArray(...x['Monday']))
-console.log(...x['Monday'])
-x['Monday'] = [...x['Monday'], y]
-console.log(x)
+
+console.log(arr);

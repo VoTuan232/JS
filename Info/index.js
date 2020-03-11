@@ -1,16 +1,30 @@
-var arr = [];
-var rows = 11;
-var columns = 12;
-
-fill2DimensionsArray(arr, rows, columns);
-
-function fill2DimensionsArray(arr, rows, columns) {
-  for (var i = 0; i < rows; i++) {
-    arr.push([0]);
-    for (var j = 0; j < columns; j++) {
-      arr[i][j] = 0;
-    }
+var imgs = {
+  constructor(name, bread) {
+    this.name = name;
+    this.bread = bread;
+  },
+  a: () => {
+    this.b();
+  },
+  b: () => {
+    console.log("b");
+  },
+  c: function() {
+    console.log("c");
   }
-}
+};
 
-console.log(arr);
+console.log(imgs.a);
+
+// class Dog {
+//   constructor(name, bread) {
+//     this.name = name;
+//     this.bread = bread;
+//     this.bark = () => {
+//       return `Bark Bark! My name is ${this.name}`;
+//     };
+//     console.log(this);
+//   }
+// }
+// const mini = new Dog("Mini", "Spitz");
+// console.log(mini.bark());

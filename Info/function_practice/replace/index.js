@@ -21,12 +21,12 @@
 */
 
 function replacer(match, p1, p2, p3, offset, string) {
-    console.log(match)
-    console.log(p1);
-    console.log(p2);
-    console.log(p3);
-    console.log(offset)
-    console.log(string)
+    console.log(match) // abc12345#$*%
+    console.log(p1); // abc
+    console.log(p2); // 12345
+    console.log(p3); // #$*%
+    console.log(offset) /// 0
+    console.log(string) // abc12345#$*%
     // p1 is nondigits, p2 digits, and p3 non-alphanumerics
     return [p1, p2, p3].join(' - ');
 }

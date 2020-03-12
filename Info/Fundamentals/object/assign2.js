@@ -1,5 +1,4 @@
 "use strict";
-const _ = require("lodash");
 
 let user = {
   id: 1,
@@ -11,6 +10,10 @@ let user = {
 };
 
 // object sẽ được copy reference
+// let cloneUser = {}
+// for (let i in user) {
+//   cloneUser[i] = user[i]
+// }
 let cloneUser = Object.assign({}, user);
 console.log(cloneUser === user); /* False */
 console.log(cloneUser.info === user.info); /* True */
@@ -25,12 +28,3 @@ console.log(user); /* { id: 2, name: 'VAT', info: { age: 25, single: true } } */
 console.log(
   cloneUser
 ); /* { id: 1, name: 'VAT', info: { age: 25, single: true } } */
-
-var objects = {
-  id: 1,
-  name: "VAT",
-  info: {
-    age: 24,
-    single: true
-  }
-};

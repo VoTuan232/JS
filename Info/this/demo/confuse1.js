@@ -8,7 +8,7 @@
 var person = {
   firstName: "Anh",
   lastName: "Tranngoc",
-  showFullName: function() {
+  showFullName: function () {
     // "Ngữ cảnh"
     console.log(this.firstName + " " + this.lastName);
   }
@@ -22,7 +22,7 @@ person.showFullName(); // Anh Tranngoc
 //  Nếu chúng ta gọi showFullName với đối tượng khác:
 var anotherPerson = {
   firstName: "VietPhuong",
-  lastName: "Doan"
+  lastName: "Doan",
 };
 
 // Chúng ta có thể sử dụng phương thức apply để gán giá trị "this" một

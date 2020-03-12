@@ -5,15 +5,18 @@ function Person(_age, _name) {
   this.age = _age;
   this.name = _name;
 }
+console.log(Person.prototype)
 
 //Có thể thêm thuộc tính vào thuộc tính prototype của hàm khởi tạo
 Person.prototype.height = 0;
+console.log(Person.prototype)
 
 //Tạo ra 1 instance của Person
 //Có cả 3 thuộc tính của mẫu khởi tạo Person
 var john_person = new Person(10, "John");
+console.log(john_person)
 for (var att in john_person) {
-  // console.log(att);
+  console.log(att);
 }
 
 //Xem đối tượng prototype của instance vừa tạo

@@ -17,7 +17,7 @@ var user = {
     { name: "T. Woods", age: 37 },
     { name: "P. Mickelson", age: 43 }
   ],
-  clickHandler: function(event) {
+  clickHandler: function (event) {
     // Chọn ngẫu nhiên 0 hoặc 1
     var randomNum = ((Math.random() * 2) | 0) + 1 - 1;
 

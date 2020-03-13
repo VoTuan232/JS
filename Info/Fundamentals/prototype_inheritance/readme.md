@@ -1,5 +1,6 @@
-Link: https://viblo.asia/p/prototype-trong-javascript-hoat-dong-nhu-the-nao-RQqKLYXOZ7z
-https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b
+Link:
+https://javascript.info/prototype-inheritance
+https://viblo.asia/p/prototype-trong-javascript-hoat-dong-nhu-the-nao-RQqKLYXOZ7z
 
 Prototypal Inheritance
 
@@ -22,3 +23,7 @@ Có 2 hạn chế:
    Ngoài ra, chỉ đc kế thừa từ 1 [[Prototype]]
 
 Prototype object chỉ đc đọc: ko viết, xóa ( trừ các thuộc tính accessor: getter/setter)
+
+Object.keys: only property of own
+for...in: all property (own and prototype object
+hasOwnProperty(): check thuộc tính của riêng object đó.

@@ -2,6 +2,10 @@ let animal = {
   eats: true,
   name: 'Name here',
 
+  walk() {
+    /* this method won't be used by rabbit */
+  },
+
   set fullName(value) {
     console.log('this')
     console.log(this) // rabbit
@@ -10,6 +14,10 @@ let animal = {
 
   get fullName() {
     return `Name: ${this.name}`;
+  },
+
+  sleep() {
+    this.isSleeping = true;
   }
 };
 let rabbit = {
@@ -37,7 +45,30 @@ console.log(rabbit.fullName)
 console.log('Animal name:')
 console.log(animal.fullName)
 
+rabbit.sleep();
 console.log('********All protperty of rabbit********')
 for (let i in rabbit) {
+  console.log(i) // jumbs, walk, eat, fullName,...
+}
+console.log('********All protperty of animal********')
+for (let i in animal) {
   console.log(i) // jumbs, walk, eat, fullName
 }
+console.log('********Own protperty of rabbit********')
+for (let i of Object.keys(rabbit)) {
+  console.log(i)
+}
+
+console.log('********Check Own protperty of rabbit********')
+for (let prop in rabbit) {
+  let isOwn = rabbit.hasOwnProperty(prop);
+
+  if (isOwn) {
+    console.log(`Our: ${prop}`); // Our: jumps
+  } else {
+    console.log(`Inherited: ${prop}`); // Inherited: eats
+  }
+}
+console.log('*****Check proto*******')
+console.log(rabbit.__proto__);
+console.log(animal.__proto__);

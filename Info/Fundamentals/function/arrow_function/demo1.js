@@ -1,10 +1,13 @@
 function defer(f, ms) {
   console.log(f);
   console.log(ms);
-  return function() {
+  return function () {
     console.log("this");
-    console.log(this);
-    setTimeout(() => f.apply(this, arguments), ms);
+    setTimeout(() => {
+      // console.log(this);
+      console.log(arguments)
+      f.apply(this, arguments)
+    }, ms);
   };
 }
 

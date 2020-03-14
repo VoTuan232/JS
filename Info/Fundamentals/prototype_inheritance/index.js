@@ -20,6 +20,7 @@ let animal = {
     this.isSleeping = true;
   }
 };
+
 let rabbit = {
   jumps: true,
   __proto__: animal

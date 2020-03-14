@@ -4,7 +4,7 @@ let animal = {
 
 function Rabbit(name) {
   this.name = name;
-}
+} // Constructor function
 console.log(animal)
 console.log(Rabbit)
 

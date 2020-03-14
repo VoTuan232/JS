@@ -25,5 +25,5 @@ Có 2 hạn chế:
 Prototype object chỉ đc đọc: ko viết, xóa ( trừ các thuộc tính accessor: getter/setter)
 
 Object.keys: only property of own
-for...in: all property (own and prototype object
+for...in: all property (own and prototype object)
 hasOwnProperty(): check thuộc tính của riêng object đó.

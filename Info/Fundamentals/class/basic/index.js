@@ -46,7 +46,7 @@ function User2(name) {
 // so we don't need to create it
 
 // 2. Add the method to prototype
-User2.prototype.sayHi = function() {
+User2.prototype.sayHi = function () {
   console.log(this.name);
 };
 

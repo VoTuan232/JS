@@ -1,7 +1,9 @@
 class User {
-  name = "Anonymous";
+  _name = '123';
 
   constructor(name) {
+    console.log('name')
+    console.log(name)
     // invokes the setter
     this.name = name;
   }
@@ -13,7 +15,7 @@ class User {
   set name(value) {
     console.log("Come SETTER");
     if (value.length < 4) {
-      alert("Name is too short.");
+      console.log("Name is too short.");
       return;
     }
     this._name = value;
@@ -34,6 +36,9 @@ console.log("****GETTER vs SETTER*******");
 console.log(user.name);
 console.log(User.prototype.name); // undefined
 
+let userTwo = new User("");
+console.log(userTwo.name)
+
 // rewriting class User in pure functions
 
 console.log("****************Cách 2 tạo Class*********************");
@@ -46,7 +51,7 @@ function User2(name) {
 // so we don't need to create it
 
 // 2. Add the method to prototype
-User2.prototype.sayHi = function() {
+User2.prototype.sayHi = function () {
   console.log(this.name);
 };
 

@@ -1,22 +1,36 @@
-class Article {
-  constructor(title, date) {
-    this.title = title;
-    this.date = date;
+class Animal {
+  static planet = "Earth";
+
+  constructor(name, speed) {
+    this.speed = speed;
+    this.name = name;
   }
 
-  static compare(articleA, articleB) {
-    console.log(articleA);
-    return articleA.date - articleB.date;
+  run(speed = 0) {
+    this.speed += speed;
+    console.log(`${this.name} runs with speed ${this.speed}.`);
+  }
+
+  static compare(animalA, animalB) {
+    return animalA.speed - animalB.speed;
   }
 }
 
-// usage
-let articles = [
-  new Article("HTML", new Date(2019, 1, 1)),
-  new Article("CSS", new Date(2019, 0, 1)),
-  new Article("JavaScript", new Date(2019, 11, 1))
-];
+// Inherit from Animal
+class Rabbit extends Animal {
+  hide() {
+    console.log(`${this.name} hides!`);
+  }
+}
 
-articles.sort(Article.compare);
+let rabbits = [new Rabbit("White Rabbit", 10), new Rabbit("Black Rabbit", 5)];
 
-console.log(articles[0].title); // CSS
+rabbits.sort(Rabbit.compare);
+
+rabbits[0].run(); // Black Rabbit runs with speed 5.
+
+console.log(Rabbit.planet); // Earth
+
+Rabbit.planet = "changed";
+console.log(Rabbit.planet);
+console.log(Animal.planet);

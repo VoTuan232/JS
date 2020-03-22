@@ -1,9 +1,9 @@
-function sayHi() {
-  phrase = "Hello"; // (*)
+// function sayHi() {
+//   phrase = "Hello"; // (*)
 
-  if (true) {
-    var phrase;
-  }
-  alert(phrase);
-}
-sayHi();
+//   if (true) {
+//     var phrase;
+//   }
+//   alert(phrase);
+// }
+// sayHi();

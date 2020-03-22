@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
+  <style>
+    .order[data-order-state="new"] {
+      color: green;
+    }
 
-<head>
-  <title>Page Title</title>
-</head>
+    .order[data-order-state="pending"] {
+      color: blue;
+    }
 
-<body>
-  <div style="margin-bottom: 50px">
-    1
+    .order[data-order-state="canceled"] {
+      color: red;
+    }
+  </style>
+
+  <div id="order" class="order" data-order-state="new">
+    A new order.
   </div>
-  <div style="margin-top: 30px">
-    2
-  </div>
-  <script src="index.js"></script>
-</body>
 
+  <script>
+    // read
+    console.log(order.dataset.orderState); // new
+    console.log(div.get)
+
+    // modify
+    order.dataset.orderState = "pending"; // (*)
+  </script>
 </html>

@@ -1,15 +1,16 @@
-const myModule = (function() {
-  const privateVariable = "Hello World";
-
-  function privateMethod() {
-    console.log(privateVariable);
+let obj = {
+  name: "vat",
+  methods() {
+    console.log(this.name);
   }
+};
 
-  return {
-    publicMethod: function() {
-      privateMethod();
-    }
-  };
-})();
+let obj1 = {
+  name: "vat1",
+  methods() {
+    console.log(this.name);
+  }
+};
 
-myModule.publicMethod();
+let x = obj.methods.bind(obj, obj1, "123");
+x();

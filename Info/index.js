@@ -1,15 +1,1 @@
-const myModule = (function() {
-  const privateVariable = "Hello World";
-
-  function privateMethod() {
-    console.log(privateVariable);
-  }
-
-  return {
-    publicMethod: function() {
-      privateMethod();
-    }
-  };
-})();
-
-myModule.publicMethod();
+console.log(0.1 + 0.2 == 0.3);

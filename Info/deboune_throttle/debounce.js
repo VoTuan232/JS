@@ -29,4 +29,4 @@ searchBoxDom.addEventListener('input', function () {
 
     // Debounces makeAPICall method
     debounceFunction(makeAPICall, 2000)
-})
+});

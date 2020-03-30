@@ -5,7 +5,7 @@ function printNumber(number) {
     setTimeout(
       () => {
         console.log(number)
-        resolve('done')
+        resolve();
       },
       number === 1 ? 2000 : 1000
     )
@@ -19,4 +19,5 @@ async function printAll() {
   await printNumber(5);
   await printNumber(6);
 }
+
 printAll();
